@@ -281,8 +281,8 @@
 		BCF20116216C6AE100C9E49C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 464HGZ97VY;
 				INFOPLIST_FILE = "Vizag Fintech Festival/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -298,8 +298,8 @@
 		BCF20117216C6AE100C9E49C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 464HGZ97VY;
 				INFOPLIST_FILE = "Vizag Fintech Festival/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

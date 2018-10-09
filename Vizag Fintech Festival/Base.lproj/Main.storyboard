@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +12,221 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Vizag_Fintech_Festival" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="Vvg-cA-srj">
+                                <rect key="frame" x="6" y="168" width="363" height="399"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="lMA-PT-EKa">
+                                        <rect key="frame" x="0.0" y="0.0" width="363" height="75"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hwh-Nu-bLW">
+                                                <rect key="frame" x="0.0" y="0.0" width="238" height="75"/>
+                                                <color key="backgroundColor" red="0.14901960784313725" green="0.25882352941176467" blue="0.54117647058823526" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                                                <inset key="imageEdgeInsets" minX="-15" minY="8" maxX="2" maxY="3"/>
+                                                <state key="normal" title="Conference Agenda" image="agenda">
+                                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WQD-Aq-M88">
+                                                <rect key="frame" x="244" y="0.0" width="119" height="75"/>
+                                                <color key="backgroundColor" red="0.14901960784313725" green="0.25882352941176467" blue="0.54117647058823526" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                                                <state key="normal" title="How To Participate">
+                                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="WQD-Aq-M88" firstAttribute="width" secondItem="hwh-Nu-bLW" secondAttribute="width" multiplier="1:2" id="b7Z-QN-gX8"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="o2X-Pt-Jte">
+                                        <rect key="frame" x="0.0" y="81" width="363" height="75"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ssu-2Y-g8S">
+                                                <rect key="frame" x="0.0" y="0.0" width="85.5" height="75"/>
+                                                <color key="backgroundColor" red="0.14901960784313725" green="0.25882352941176467" blue="0.54117647058823526" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                                                <inset key="titleEdgeInsets" minX="-39" minY="48" maxX="0.0" maxY="0.0"/>
+                                                <inset key="imageEdgeInsets" minX="21" minY="-18" maxX="0.0" maxY="0.0"/>
+                                                <state key="normal" title="Speaker Line-Up " image="speaker">
+                                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rjo-Ai-Z4s">
+                                                <rect key="frame" x="91.5" y="0.0" width="85.5" height="75"/>
+                                                <color key="backgroundColor" red="0.14901960784313725" green="0.25882352941176467" blue="0.54117647058823526" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                                                <inset key="titleEdgeInsets" minX="-45" minY="49" maxX="0.0" maxY="0.0"/>
+                                                <inset key="imageEdgeInsets" minX="19" minY="-14" maxX="0.0" maxY="0.0"/>
+                                                <state key="normal" title="Attendee" image="attendee">
+                                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hv7-GO-ah7">
+                                                <rect key="frame" x="183" y="0.0" width="180" height="75"/>
+                                                <color key="backgroundColor" red="0.14901960784313725" green="0.25882352941176467" blue="0.54117647058823526" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                                                <inset key="titleEdgeInsets" minX="-125" minY="48" maxX="0.0" maxY="0.0"/>
+                                                <inset key="imageEdgeInsets" minX="73" minY="10" maxX="71" maxY="25"/>
+                                                <state key="normal" title="Fintech Festival" image="fintecfestival">
+                                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="hv7-GO-ah7" firstAttribute="width" secondItem="rjo-Ai-Z4s" secondAttribute="width" multiplier="2.1:1" id="7uX-Jj-vT1"/>
+                                            <constraint firstItem="rjo-Ai-Z4s" firstAttribute="width" secondItem="Ssu-2Y-g8S" secondAttribute="width" id="BQc-kP-RLB"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="man-4K-3VD">
+                                        <rect key="frame" x="0.0" y="162" width="363" height="75"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dDm-LO-dZM">
+                                                <rect key="frame" x="0.0" y="0.0" width="178.5" height="75"/>
+                                                <color key="backgroundColor" red="0.14901960784313725" green="0.25882352941176467" blue="0.54117647058823526" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                                                <inset key="titleEdgeInsets" minX="-42" minY="48" maxX="0.0" maxY="0.0"/>
+                                                <inset key="imageEdgeInsets" minX="70" minY="-9" maxX="1" maxY="0.0"/>
+                                                <state key="normal" title="$1 Million Challenge" image="target">
+                                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eBp-Gt-t1H">
+                                                <rect key="frame" x="184.5" y="0.0" width="178.5" height="75"/>
+                                                <color key="backgroundColor" red="0.14901960784313725" green="0.25882352941176467" blue="0.54117647058823526" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                                                <inset key="titleEdgeInsets" minX="-125" minY="48" maxX="0.0" maxY="0.0"/>
+                                                <inset key="imageEdgeInsets" minX="72" minY="10" maxX="65" maxY="25"/>
+                                                <state key="normal" title="Registrations" image="registration">
+                                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="GcJ-Kp-454">
+                                        <rect key="frame" x="0.0" y="243" width="363" height="75"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PyO-HH-9LY">
+                                                <rect key="frame" x="0.0" y="0.0" width="85.5" height="75"/>
+                                                <color key="backgroundColor" red="0.14901960784313725" green="0.25882352941176467" blue="0.54117647058823526" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                                                <inset key="titleEdgeInsets" minX="-38" minY="48" maxX="0.0" maxY="0.0"/>
+                                                <inset key="imageEdgeInsets" minX="23" minY="10" maxX="19" maxY="21"/>
+                                                <state key="normal" title="About Us" image="aboutus">
+                                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tku-v4-j6c">
+                                                <rect key="frame" x="91.5" y="0.0" width="85.5" height="75"/>
+                                                <color key="backgroundColor" red="0.14901960784313725" green="0.25882352941176467" blue="0.54117647058823526" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                                                <inset key="titleEdgeInsets" minX="-38" minY="48" maxX="0.0" maxY="0.0"/>
+                                                <inset key="imageEdgeInsets" minX="21" minY="16" maxX="0.0" maxY="24"/>
+                                                <state key="normal" title="Explore Vizag" image="explorvizag">
+                                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a94-cd-5XU">
+                                                <rect key="frame" x="183" y="0.0" width="180" height="75"/>
+                                                <color key="backgroundColor" red="0.14901960784313725" green="0.25882352941176467" blue="0.54117647058823526" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                                                <inset key="titleEdgeInsets" minX="-125" minY="48" maxX="0.0" maxY="0.0"/>
+                                                <inset key="imageEdgeInsets" minX="72" minY="10" maxX="65" maxY="25"/>
+                                                <state key="normal" title="Polling and Survey" image="polling">
+                                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="a94-cd-5XU" firstAttribute="width" secondItem="tku-v4-j6c" secondAttribute="width" multiplier="2.1:1" id="Cmm-Hv-hRq"/>
+                                            <constraint firstItem="tku-v4-j6c" firstAttribute="width" secondItem="PyO-HH-9LY" secondAttribute="width" id="VsY-4p-hwB"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="tds-8r-po2">
+                                        <rect key="frame" x="0.0" y="324" width="363" height="75"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QYJ-53-GmA">
+                                                <rect key="frame" x="0.0" y="0.0" width="180" height="75"/>
+                                                <color key="backgroundColor" red="0.14901960784313725" green="0.25882352941176467" blue="0.54117647058823526" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                                                <inset key="titleEdgeInsets" minX="-42" minY="48" maxX="0.0" maxY="0.0"/>
+                                                <inset key="imageEdgeInsets" minX="70" minY="-7" maxX="9" maxY="0.0"/>
+                                                <state key="normal" title="Public Relations" image="feedback">
+                                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yA4-Tw-eHv">
+                                                <rect key="frame" x="186" y="0.0" width="85.5" height="75"/>
+                                                <color key="backgroundColor" red="0.14901960784313725" green="0.25882352941176467" blue="0.54117647058823526" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                                                <inset key="titleEdgeInsets" minX="-33" minY="43" maxX="6" maxY="0.0"/>
+                                                <inset key="imageEdgeInsets" minX="27" minY="13" maxX="23" maxY="26"/>
+                                                <state key="normal" title="Layout" image="layout">
+                                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bHY-f1-ThB">
+                                                <rect key="frame" x="277.5" y="0.0" width="85.5" height="75"/>
+                                                <color key="backgroundColor" red="0.14901960784313725" green="0.25882352941176467" blue="0.54117647058823526" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                                                <inset key="titleEdgeInsets" minX="-33" minY="43" maxX="0.0" maxY="0.0"/>
+                                                <inset key="imageEdgeInsets" minX="28" minY="17" maxX="26" maxY="26"/>
+                                                <state key="normal" title="Help Desk" image="help_center">
+                                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="yA4-Tw-eHv" firstAttribute="width" secondItem="QYJ-53-GmA" secondAttribute="width" multiplier="1:2.1" id="eNR-zx-Wdj"/>
+                                            <constraint firstItem="bHY-f1-ThB" firstAttribute="width" secondItem="yA4-Tw-eHv" secondAttribute="width" id="zFX-3x-rOJ"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="header" translatesAutoresizingMaskIntoConstraints="NO" id="Ifw-Eg-iHu">
+                                <rect key="frame" x="16" y="0.0" width="375" height="86"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="86" id="PgG-37-fXc"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Ifw-Eg-iHu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="4di-hX-Gh0"/>
+                            <constraint firstItem="Ifw-Eg-iHu" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="C1h-0B-tMn"/>
+                            <constraint firstItem="Vvg-cA-srj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="6" id="DSA-Mi-zWG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Vvg-cA-srj" secondAttribute="bottom" constant="100" id="d9E-yD-yj6"/>
+                            <constraint firstItem="Ifw-Eg-iHu" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" constant="16" id="nmY-p4-Sla"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Vvg-cA-srj" secondAttribute="trailing" constant="6" id="p1R-Vx-NKH"/>
+                            <constraint firstItem="Vvg-cA-srj" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="148" id="uvD-MD-HnC"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="56.799999999999997" y="26.53673163418291"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="aboutus" width="42" height="42"/>
+        <image name="agenda" width="42" height="42"/>
+        <image name="attendee" width="42" height="42"/>
+        <image name="explorvizag" width="42" height="42"/>
+        <image name="feedback" width="42" height="42"/>
+        <image name="fintecfestival" width="128" height="128"/>
+        <image name="header" width="760" height="160"/>
+        <image name="help_center" width="42" height="42"/>
+        <image name="layout" width="42" height="42"/>
+        <image name="polling" width="128" height="128"/>
+        <image name="registration" width="128" height="128"/>
+        <image name="speaker" width="42" height="42"/>
+        <image name="target" width="42" height="42"/>
+    </resources>
 </document>
