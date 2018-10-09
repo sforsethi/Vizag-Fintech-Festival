@@ -163,6 +163,7 @@ class ViewController: UIViewController {
         
         let partnerOption = UIAlertAction(title: "Partner With Us", style: .default) { (action) in
             // Partner With Us options here
+            self.performSegue(withIdentifier: "partnerWithUs", sender: Any?.self)
         }
         let bookOption = UIAlertAction(title: "Book Your Space", style: .default) { (action) in
             // Book With Us Options here
