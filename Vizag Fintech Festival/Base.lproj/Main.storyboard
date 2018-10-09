@@ -44,6 +44,9 @@
                                                 <state key="normal" title="How To Participate" image="participet">
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="howToParticipateButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="t3l-Id-oGn"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -82,6 +85,9 @@
                                                 <state key="normal" title="Fintech Festival" image="fintecfestival">
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="fintechFestButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Lbo-xS-LL1"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -101,6 +107,9 @@
                                                 <state key="normal" title="$1 Million Challenge" image="target">
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="millionButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VzE-vS-1wO"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eBp-Gt-t1H">
                                                 <rect key="frame" x="184.5" y="0.0" width="178.5" height="66"/>
@@ -122,27 +131,35 @@
                                                 <color key="backgroundColor" red="0.14901960784313725" green="0.25882352941176467" blue="0.54117647058823526" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="9"/>
                                                 <inset key="titleEdgeInsets" minX="-38" minY="48" maxX="0.0" maxY="0.0"/>
-                                                <inset key="imageEdgeInsets" minX="23" minY="10" maxX="19" maxY="21"/>
+                                                <inset key="imageEdgeInsets" minX="24" minY="10" maxX="23" maxY="21"/>
                                                 <state key="normal" title="About Us" image="aboutus">
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="aboutUsButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2rW-U7-hvb"/>
+                                                    <action selector="millionButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pct-k5-rbC"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tku-v4-j6c">
                                                 <rect key="frame" x="91.5" y="0.0" width="85.5" height="66.5"/>
                                                 <color key="backgroundColor" red="0.14901960784313725" green="0.25882352941176467" blue="0.54117647058823526" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="9"/>
                                                 <inset key="titleEdgeInsets" minX="-38" minY="48" maxX="0.0" maxY="0.0"/>
-                                                <inset key="imageEdgeInsets" minX="21" minY="16" maxX="0.0" maxY="24"/>
+                                                <inset key="imageEdgeInsets" minX="23" minY="16" maxX="24" maxY="24"/>
                                                 <state key="normal" title="Explore Vizag" image="explorvizag">
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="aboutUsButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fL6-HZ-Hld"/>
+                                                    <action selector="exploreButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aMx-xM-7WM"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a94-cd-5XU">
                                                 <rect key="frame" x="183" y="0.0" width="180" height="66.5"/>
                                                 <color key="backgroundColor" red="0.14901960784313725" green="0.25882352941176467" blue="0.54117647058823526" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="9"/>
                                                 <inset key="titleEdgeInsets" minX="-125" minY="48" maxX="0.0" maxY="0.0"/>
-                                                <inset key="imageEdgeInsets" minX="72" minY="10" maxX="65" maxY="25"/>
+                                                <inset key="imageEdgeInsets" minX="72" minY="10" maxX="68" maxY="25"/>
                                                 <state key="normal" title="Polling and Survey" image="polling">
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
@@ -161,17 +178,20 @@
                                                 <color key="backgroundColor" red="0.14901960784313725" green="0.25882352941176467" blue="0.54117647058823526" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="9"/>
                                                 <inset key="titleEdgeInsets" minX="-42" minY="48" maxX="0.0" maxY="0.0"/>
-                                                <inset key="imageEdgeInsets" minX="70" minY="-7" maxX="9" maxY="0.0"/>
+                                                <inset key="imageEdgeInsets" minX="75" minY="15" maxX="65" maxY="16"/>
                                                 <state key="normal" title="Public Relations" image="feedback">
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="publicButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wlh-Ts-rrf"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yA4-Tw-eHv">
                                                 <rect key="frame" x="186" y="0.0" width="85.5" height="66"/>
                                                 <color key="backgroundColor" red="0.14901960784313725" green="0.25882352941176467" blue="0.54117647058823526" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="9"/>
                                                 <inset key="titleEdgeInsets" minX="-33" minY="43" maxX="6" maxY="0.0"/>
-                                                <inset key="imageEdgeInsets" minX="27" minY="13" maxX="23" maxY="26"/>
+                                                <inset key="imageEdgeInsets" minX="29" minY="13" maxX="26" maxY="26"/>
                                                 <state key="normal" title="Layout" image="layout">
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
@@ -181,7 +201,7 @@
                                                 <color key="backgroundColor" red="0.14901960784313725" green="0.25882352941176467" blue="0.54117647058823526" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="9"/>
                                                 <inset key="titleEdgeInsets" minX="-33" minY="43" maxX="0.0" maxY="0.0"/>
-                                                <inset key="imageEdgeInsets" minX="28" minY="17" maxX="26" maxY="26"/>
+                                                <inset key="imageEdgeInsets" minX="31" minY="17" maxX="28" maxY="26"/>
                                                 <state key="normal" title="Help Desk" image="help_center">
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
