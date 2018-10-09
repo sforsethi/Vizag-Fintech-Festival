@@ -241,10 +241,28 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="ygf-Jy-zkU"/>
+                    <connections>
+                        <segue destination="y3e-Zn-2dw" kind="show" identifier="partnerWithUs" id="MkJ-gl-YH8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="996" y="26.53673163418291"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="H90-qU-zth">
+            <objects>
+                <viewController id="y3e-Zn-2dw" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ubV-Wb-076">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="gaE-Fz-VFS"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Lbe-zR-8bc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="996" y="1096"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="WSx-NL-ZFt">

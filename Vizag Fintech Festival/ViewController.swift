@@ -19,7 +19,7 @@ class ViewController: UIViewController {
         let media = UIAlertAction(title: "Media Partners", style: .default) { (UIAlertAction) in
             //
         }
-        let media2 = UIAlertAction(title: "Media Acceditation Id", style: .default) { (UIAlertAction) in
+        let media2 = UIAlertAction(title: "Media Acceditation", style: .default) { (UIAlertAction) in
             //
         }
         let cancelOption = UIAlertAction(title: "Cancel", style: .cancel) { (UIAlertAction) in
@@ -103,7 +103,7 @@ class ViewController: UIViewController {
         let americaRoadshows = UIAlertAction(title: "North America Roadshows", style: .default) { (UIAlertAction) in
             //
         }
-        let otherRoadshows = UIAlertAction(title: "Other Roadshows", style: .default) { (UIAlertAction) in
+        let otherRoadshows = UIAlertAction(title: "Rest of World Roadshows", style: .default) { (UIAlertAction) in
             //
         }
         let cancelOption = UIAlertAction(title: "Cancel", style: .cancel) { (UIAlertAction) in
@@ -123,10 +123,10 @@ class ViewController: UIViewController {
     @IBAction func fintechFestButton(_ sender: Any) {
         let finFestivalOptions = UIAlertController(title: "Fintech Festival", message: "", preferredStyle: .actionSheet)
         
-        let festLineUp = UIAlertAction(title: "Festival LineUp", style: .default) { (UIAlertAction) in
+        let festLineUp = UIAlertAction(title: "Festival Line-up", style: .default) { (UIAlertAction) in
             // Festival LineUp Page
         }
-        let eventCalender = UIAlertAction(title: "Event Calender", style: .default) { (UIAlertAction) in
+        let eventCalender = UIAlertAction(title: "Event Calendar", style: .default) { (UIAlertAction) in
             // Event calender
         }
         let conferenceAgendaOption = UIAlertAction(title: "Conference Agenda", style: .default) { (UIAlertAction) in
