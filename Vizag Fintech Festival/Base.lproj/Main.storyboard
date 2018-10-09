@@ -32,11 +32,13 @@
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WQD-Aq-M88">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WQD-Aq-M88">
                                                 <rect key="frame" x="244" y="0.0" width="119" height="75"/>
                                                 <color key="backgroundColor" red="0.14901960784313725" green="0.25882352941176467" blue="0.54117647058823526" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="9"/>
-                                                <state key="normal" title="How To Participate">
+                                                <inset key="titleEdgeInsets" minX="-42" minY="54" maxX="0.0" maxY="0.0"/>
+                                                <inset key="imageEdgeInsets" minX="39" minY="10" maxX="17" maxY="16"/>
+                                                <state key="normal" title="How To Participate" image="participet">
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
                                             </button>
@@ -224,6 +226,7 @@
         <image name="header" width="760" height="160"/>
         <image name="help_center" width="42" height="42"/>
         <image name="layout" width="42" height="42"/>
+        <image name="participet" width="42" height="42"/>
         <image name="polling" width="128" height="128"/>
         <image name="registration" width="128" height="128"/>
         <image name="speaker" width="42" height="42"/>
