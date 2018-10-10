@@ -396,6 +396,7 @@
                         <segue destination="t3l-jM-VAr" kind="show" identifier="businessMatching" id="3YT-0l-1gn"/>
                         <segue destination="vXH-4T-dFK" kind="show" identifier="festivalLineup" id="LkR-cC-1Rn"/>
                         <segue destination="Pko-nP-RYj" kind="show" identifier="eventCalendar" id="YEm-TN-7cw"/>
+                        <segue destination="GZ2-Vf-19M" kind="show" identifier="conferenceAgendaPage" id="LLl-5R-OMv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -2509,5 +2510,6 @@ Whether you are a startup or an MNC, you will get to engage with different prosp
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="3YT-0l-1gn"/>
+        <segue reference="LLl-5R-OMv"/>
     </inferredMetricsTieBreakers>
 </document>

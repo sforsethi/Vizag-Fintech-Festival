@@ -134,6 +134,8 @@ class ViewController: UIViewController {
         }
         let conferenceAgendaOption = UIAlertAction(title: "Conference Agenda", style: .default) { (UIAlertAction) in
             // Conference Agenda Page
+            self.performSegue(withIdentifier: "conferenceAgendaPage", sender: Any?.self)
+
         }
         let exhibitionOption = UIAlertAction(title: "Exhibition", style: .default) { (UIAlertAction) in
             // Exhibition
