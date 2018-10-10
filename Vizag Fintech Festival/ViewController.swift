@@ -125,9 +125,12 @@ class ViewController: UIViewController {
         
         let festLineUp = UIAlertAction(title: "Festival Line-up", style: .default) { (UIAlertAction) in
             // Festival LineUp Page
+            self.performSegue(withIdentifier: "festivalLineup", sender: Any?.self)
         }
         let eventCalender = UIAlertAction(title: "Event Calendar", style: .default) { (UIAlertAction) in
             // Event calender
+            self.performSegue(withIdentifier: "eventCalendar", sender: Any?.self)
+
         }
         let conferenceAgendaOption = UIAlertAction(title: "Conference Agenda", style: .default) { (UIAlertAction) in
             // Conference Agenda Page
@@ -179,6 +182,9 @@ class ViewController: UIViewController {
         
         let businessOption = UIAlertAction(title: "Business Matching", style: .default) { (action) in
             //
+            
+            self.performSegue(withIdentifier: "businessMatching", sender: Any?.self)
+
         }
         
         let cancelOption = UIAlertAction(title: "Cancel", style: .cancel) { (action) in
