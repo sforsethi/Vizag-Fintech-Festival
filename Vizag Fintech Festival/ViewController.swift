@@ -167,6 +167,8 @@ class ViewController: UIViewController {
         }
         let bookOption = UIAlertAction(title: "Book Your Space", style: .default) { (action) in
             // Book With Us Options here
+            self.performSegue(withIdentifier: "bookYourSpace", sender: Any?.self)
+
         }
         
         let attendOption = UIAlertAction(title: "Attend The Conference", style: .default) { (action) in
