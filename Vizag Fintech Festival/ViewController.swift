@@ -173,6 +173,8 @@ class ViewController: UIViewController {
         
         let attendOption = UIAlertAction(title: "Attend The Conference", style: .default) { (action) in
             //Attend Conference Options here
+            self.performSegue(withIdentifier: "attendTheConference", sender: Any?.self)
+
         }
         
         let businessOption = UIAlertAction(title: "Business Matching", style: .default) { (action) in
