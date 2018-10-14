@@ -10,7 +10,65 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    @IBAction func exploreButton(_ sender: Any) {
+        
+        let exploreOptions = UIAlertController(title: "Explore Vizag", message: "", preferredStyle: .actionSheet)
+        
+        let sightseeing = UIAlertAction(title: "SightSeeing", style: .default) { (UIAlertAction) in
+            //siteTours
+            self.performSegue(withIdentifier: "siteTours", sender: Any?.self)
+        }
+        let accomodation = UIAlertAction(title: "Accomodation", style: .default) { (UIAlertAction) in
+            //
+        }
+        let cancelOption = UIAlertAction(title: "Cancel", style: .cancel) { (UIAlertAction) in
+            //
+        }
+        
+        exploreOptions.addAction(sightseeing)
+        exploreOptions.addAction(accomodation)
+        exploreOptions.addAction(cancelOption)
+        
+        present(exploreOptions, animated: true) {
+            //
+        }
+        
+    }
+    @IBAction func aboutUsButton(_ sender: Any) {
+        let aboutOptions = UIAlertController(title: "About Us", message: "", preferredStyle: .actionSheet)
+        
+        let sunriseState = UIAlertAction(title: "Sunrise State", style: .default) { (UIAlertAction) in
+            //sunriseState
+            self.performSegue(withIdentifier: "sunriseState", sender: Any?.self)
+        }
+        let fintechValley = UIAlertAction(title: "Fintech Valley Vizag", style: .default) { (UIAlertAction) in
+            //fintechValletVizag
+            self.performSegue(withIdentifier: "fintechValletVizag", sender: Any?.self)
+        }
+        let innovation = UIAlertAction(title: "AP Innovation Society", style: .default) { (UIAlertAction) in
+            //apInnovation
+            self.performSegue(withIdentifier: "apInnovation", sender: Any?.self)
+            
+        }
+        let past = UIAlertAction(title: "Past Events", style: .default) { (UIAlertAction) in
+            //
+        }
+        let cancelOption = UIAlertAction(title: "Cancel", style: .cancel) { (UIAlertAction) in
+            //
+        }
+        
+        aboutOptions.addAction(sunriseState)
+        aboutOptions.addAction(fintechValley)
+        aboutOptions.addAction(innovation)
+        aboutOptions.addAction(past)
+        aboutOptions.addAction(cancelOption)
+        
+        present(aboutOptions, animated: true) {
+            //
+        }
+    }
     @IBAction func publicButton(_ sender: Any) {
+        
         
         let publicRelationsOptions = UIAlertController(title: "Public Relations", message: "", preferredStyle: .actionSheet)
         let sup = UIAlertAction(title: "Supporting Associates", style: .default) { (UIAlertAction) in
@@ -37,73 +95,27 @@ class ViewController: UIViewController {
         
         
     }
-    @IBAction func exploreButton(_ sender: Any) {
-        
-        let exploreOptions = UIAlertController(title: "Explore Vizag", message: "", preferredStyle: .actionSheet)
-        
-        let sightseeing = UIAlertAction(title: "SightSeeing", style: .default) { (UIAlertAction) in
-            //
+    @IBAction func registrationButton(_ sender: Any) {
+        if let url = URL(string: "https://www.vizagfintechfestival.com/registration.php") {
+            UIApplication.shared.open(url, options: [:])
         }
-        let accomodation = UIAlertAction(title: "Accomodation", style: .default) { (UIAlertAction) in
-            //
-        }
-        let cancelOption = UIAlertAction(title: "Cancel", style: .cancel) { (UIAlertAction) in
-            //
-        }
-        
-        exploreOptions.addAction(sightseeing)
-        exploreOptions.addAction(accomodation)
-        exploreOptions.addAction(cancelOption)
-        
-        present(exploreOptions, animated: true) {
-            //
-        }
-        
-        
-    }
-    @IBAction func aboutUsButton(_ sender: Any) {
-        
-        let aboutOptions = UIAlertController(title: "About Us", message: "", preferredStyle: .actionSheet)
-        
-        let sunriseState = UIAlertAction(title: "Sunrise State", style: .default) { (UIAlertAction) in
-            //
-        }
-        let fintechValley = UIAlertAction(title: "Fintech Valley Vizag", style: .default) { (UIAlertAction) in
-            //
-        }
-        let innovation = UIAlertAction(title: "AP Innovation Society", style: .default) { (UIAlertAction) in
-            //
-        }
-        let past = UIAlertAction(title: "Past Events", style: .default) { (UIAlertAction) in
-            //
-        }
-        let cancelOption = UIAlertAction(title: "Cancel", style: .cancel) { (UIAlertAction) in
-            //
-        }
-        
-        aboutOptions.addAction(sunriseState)
-        aboutOptions.addAction(fintechValley)
-        aboutOptions.addAction(innovation)
-        aboutOptions.addAction(past)
-        aboutOptions.addAction(cancelOption)
-        
-        present(aboutOptions, animated: true) {
-            //
-        }
-
-        
     }
     @IBAction func millionButton(_ sender: Any) {
         
         let millionOptions = UIAlertController(title: "$1 Million Challenge" , message: "", preferredStyle: .actionSheet)
         
         let detailsOption = UIAlertAction(title: "Program Details", style: .default) { (UIAlertAction) in
-            //
+            //programDetails
+            self.performSegue(withIdentifier: "programDetails", sender: Any?.self)
+
         }
         let americaRoadshows = UIAlertAction(title: "North America Roadshows", style: .default) { (UIAlertAction) in
+            
+            self.performSegue(withIdentifier: "northAmerica", sender: Any?.self)
             //
         }
         let otherRoadshows = UIAlertAction(title: "Rest of World Roadshows", style: .default) { (UIAlertAction) in
+            self.performSegue(withIdentifier: "restOfWorld", sender: Any?.self)
             //
         }
         let cancelOption = UIAlertAction(title: "Cancel", style: .cancel) { (UIAlertAction) in
@@ -139,6 +151,8 @@ class ViewController: UIViewController {
         }
         let exhibitionOption = UIAlertAction(title: "Exhibition", style: .default) { (UIAlertAction) in
             // Exhibition
+            self.performSegue(withIdentifier: "exhibition", sender: Any?.self)
+
         }
         let speakerLineUpOption = UIAlertAction(title: "Speakers Line-up", style: .default) { (UIAlertAction) in
             //
@@ -205,7 +219,7 @@ class ViewController: UIViewController {
             
         }
     }
-  
+    
 
     @IBAction func ConferenceButton(_ sender: UIButton) {
     }

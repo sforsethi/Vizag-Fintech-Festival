@@ -9,19 +9,8 @@
 import UIKit
 
 class FestivalLineup: UIViewController {
-    @IBAction func reImagineButton(_ sender: Any) {
-    }
-    @IBAction func siteButton(_ sender: Any) {
-    }
-    @IBAction func comicButton(_ sender: Any) {
-    }
-    @IBAction func roundtableButton(_ sender: Any) {
-    }
-    @IBAction func openingBashButton(_ sender: Any) {
-    }
-    
-    @IBAction func cxoGolfButton(_ sender: Any) {
-    }
+
+    @IBOutlet weak var golfButton: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
