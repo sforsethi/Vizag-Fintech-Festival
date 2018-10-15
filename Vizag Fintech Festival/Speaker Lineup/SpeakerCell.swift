@@ -2,7 +2,7 @@
 //  SpeakerCell.swift
 //  Vizag Fintech Festival
 //
-//  Created by The Taste Affair on 13/10/18.
+//  Created by The Taste Affair on 15/10/18.
 //  Copyright © 2018 Raghav Sethi. All rights reserved.
 //
 
@@ -10,22 +10,11 @@ import UIKit
 
 class SpeakerCell: UITableViewCell {
 
-    @IBOutlet weak var designationLabel: UILabel!
-    @IBOutlet weak var nameLabel: UILabel!
-    @IBAction func linkedinButton(_ sender: Any) {
-    }
-    @IBOutlet weak var speakerImage: UIImageView!
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
+    @IBOutlet weak var speakerImage: UIImageView?
+    @IBOutlet weak var speakerDesignation: UILabel!
+    @IBOutlet weak var speakerName: UILabel!
 
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
-    
 
     
+
 }

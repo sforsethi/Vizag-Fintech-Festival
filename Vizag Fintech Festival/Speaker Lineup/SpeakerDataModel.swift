@@ -8,19 +8,11 @@
 
 import UIKit
 
-//class Speakers : Codable    {
-//    let speakers : [Speaker]
-//
-//    init(speakers :[Speaker]) {
-//        self.speakers = speakers
-//    }
-//}
-
 class Speaker: Codable  {
     var name : String
     var designation : String
-    var photoUrl : String
-    var linkedIn : String
+    var photoUrl : String?
+    var linkedIn : String?
     
     init(name : String, designation : String, photoUrl : String, linkedIn : String) {
         self.name = name

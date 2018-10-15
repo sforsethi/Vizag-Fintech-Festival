@@ -11,9 +11,7 @@ import Alamofire
 import SwiftyJSON
 
 
-class SpeakerList: UIViewController, UITableViewDataSource, UITableViewDelegate {
-
-    
+class SpeakerList: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     final let SPEAKER_URL = "https://www.vizagfintechfestival.com/fintech-app/speaker.json"
@@ -23,12 +21,16 @@ class SpeakerList: UIViewController, UITableViewDataSource, UITableViewDelegate 
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
         tableView.delegate = self
         tableView.dataSource = self
+        
+        
+        self.tableView.rowHeight = 230
         //downloadJson()
         getSpeakerData(url: SPEAKER_URL)
         // Do any additional setup after loading the view.
-        tableView.register(UINib(nibName: "SpeakerCell", bundle: nil), forCellReuseIdentifier: "speakerCell")
+        //tableView.register(UINib(nibName: "SpeakerCell", bundle: nil), forCellReuseIdentifier: "speakerCell")
         tableView.reloadData()
     }
     // MARK - Networking
@@ -90,29 +92,65 @@ class SpeakerList: UIViewController, UITableViewDataSource, UITableViewDelegate 
             i += 1
             tableView.reloadData()
         }
-        DispatchQueue.main.async {
             self.tableView.reloadData()
-        }
+        
         
         print(speakers[2].designation)
+        print(speakers[6].photoUrl!)
         print(speakers.count)
 
     }
     
+//    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+//        return speakers.count
+//
+//    }
+//
+//    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+//
+//         let cell = tableView.dequeueReusableCell(withIdentifier: "SpeakerCell", for: indexPath) as! SpeakerCell
+//
+//         cell.speakerName?.text = speakers[indexPath.row].name
+//         cell.speakerDesignation?.text = speakers[indexPath.row].designation
+//
+////        print(speakers.count)
+////        print(speakers[indexPath.row].name)
+////        tableView.reloadData()
+//
+//        return cell
+//
+//    }
+}
+
+extension SpeakerList: UITableViewDataSource,UITableViewDelegate    {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return speakers.count
-        
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-         let cell = tableView.dequeueReusableCell(withIdentifier: "SpeakerCell", for: indexPath) as! SpeakerCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "SpeakerCell") as! SpeakerCell
         
-        cell.nameLabel?.text = speakers[10].name
-        cell.designationLabel?.text = speakers[indexPath.row].designation
+        let name = speakers[indexPath.row].name
+        cell.speakerName!.text = name
+        let designation = speakers[indexPath.row].designation
+        cell.speakerDesignation!.text = designation
+
+        if let imageURL = URL(string: speakers[indexPath.row].photoUrl!) {
+            DispatchQueue.global().async {
+                let data = try? Data(contentsOf: imageURL)
+                if let data = data {
+                    let image = UIImage(data: data)
+                    DispatchQueue.main.async {
+                        cell.speakerImage!.image = image
+                    }
+                }
+            }
+        }
+
+        
         
         return cell
-        
     }
     
     

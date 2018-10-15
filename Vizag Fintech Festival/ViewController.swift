@@ -10,7 +10,8 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    @IBAction func exploreButton(_ sender: Any) {
+    @IBAction func exploreButton(_ sender: UIButton) {
+    
         
         let exploreOptions = UIAlertController(title: "Explore Vizag", message: "", preferredStyle: .actionSheet)
         
@@ -34,6 +35,7 @@ class ViewController: UIViewController {
         }
         
     }
+    
     @IBAction func aboutUsButton(_ sender: Any) {
         let aboutOptions = UIAlertController(title: "About Us", message: "", preferredStyle: .actionSheet)
         
