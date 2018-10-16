@@ -7,7 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BC13AA022175DA11003B0D9D /* RoundImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC13AA012175DA11003B0D9D /* RoundImage.swift */; };
+		BC13AA042175E957003B0D9D /* APIs.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC13AA032175E957003B0D9D /* APIs.swift */; };
+		BC13AA062175EA4A003B0D9D /* MediaList.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC13AA052175EA4A003B0D9D /* MediaList.swift */; };
+		BC13AA082175EB03003B0D9D /* MediaCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC13AA072175EB03003B0D9D /* MediaCell.swift */; };
+		BC13AA0A2175EC1E003B0D9D /* MediaDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC13AA092175EC1E003B0D9D /* MediaDataModel.swift */; };
 		BC4CA1F1217498450073E21E /* HelpDeskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4CA1F0217498450073E21E /* HelpDeskViewController.swift */; };
 		BC4CA1F52174C3330073E21E /* SpeakerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4CA1F42174C3330073E21E /* SpeakerCell.swift */; };
 		BC610B9F216F9411007AC403 /* SpeakerList.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC610B9E216F9411007AC403 /* SpeakerList.swift */; };
@@ -29,7 +32,10 @@
 		22D453E09BD68DB0AB45F90D /* Pods_Vizag_Fintech_Festival.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Vizag_Fintech_Festival.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F70C9189ECCC0481565CA31 /* Pods-Vizag Fintech Festival.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vizag Fintech Festival.release.xcconfig"; path = "Target Support Files/Pods-Vizag Fintech Festival/Pods-Vizag Fintech Festival.release.xcconfig"; sourceTree = "<group>"; };
 		7379C29FD24254F46D65EB40 /* Pods-Vizag Fintech Festival.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vizag Fintech Festival.debug.xcconfig"; path = "Target Support Files/Pods-Vizag Fintech Festival/Pods-Vizag Fintech Festival.debug.xcconfig"; sourceTree = "<group>"; };
-		BC13AA012175DA11003B0D9D /* RoundImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundImage.swift; sourceTree = "<group>"; };
+		BC13AA032175E957003B0D9D /* APIs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIs.swift; sourceTree = "<group>"; };
+		BC13AA052175EA4A003B0D9D /* MediaList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaList.swift; sourceTree = "<group>"; };
+		BC13AA072175EB03003B0D9D /* MediaCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaCell.swift; sourceTree = "<group>"; };
+		BC13AA092175EC1E003B0D9D /* MediaDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaDataModel.swift; sourceTree = "<group>"; };
 		BC4CA1F0217498450073E21E /* HelpDeskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpDeskViewController.swift; sourceTree = "<group>"; };
 		BC4CA1F42174C3330073E21E /* SpeakerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakerCell.swift; sourceTree = "<group>"; };
 		BC610B9E216F9411007AC403 /* SpeakerList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakerList.swift; sourceTree = "<group>"; };
@@ -77,12 +83,21 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		BC13AA0B2175F608003B0D9D /* Media Partners */ = {
+			isa = PBXGroup;
+			children = (
+				BC13AA052175EA4A003B0D9D /* MediaList.swift */,
+				BC13AA072175EB03003B0D9D /* MediaCell.swift */,
+				BC13AA092175EC1E003B0D9D /* MediaDataModel.swift */,
+			);
+			path = "Media Partners";
+			sourceTree = "<group>";
+		};
 		BC1E4C0321721990008B2DA4 /* Speaker Lineup */ = {
 			isa = PBXGroup;
 			children = (
 				BC610B9E216F9411007AC403 /* SpeakerList.swift */,
 				BC610BA0216FA9E5007AC403 /* SpeakerDataModel.swift */,
-				BC4CA1F0217498450073E21E /* HelpDeskViewController.swift */,
 				BC4CA1F42174C3330073E21E /* SpeakerCell.swift */,
 			);
 			path = "Speaker Lineup";
@@ -109,9 +124,12 @@
 		BCF20105216C6ADB00C9E49C /* Vizag Fintech Festival */ = {
 			isa = PBXGroup;
 			children = (
+				BC13AA0B2175F608003B0D9D /* Media Partners */,
 				BC1E4C0321721990008B2DA4 /* Speaker Lineup */,
 				BCF20106216C6ADB00C9E49C /* AppDelegate.swift */,
 				BCF20108216C6ADB00C9E49C /* ViewController.swift */,
+				BC13AA032175E957003B0D9D /* APIs.swift */,
+				BC4CA1F0217498450073E21E /* HelpDeskViewController.swift */,
 				BCF2010A216C6ADB00C9E49C /* Main.storyboard */,
 				BCF2010D216C6AE100C9E49C /* Assets.xcassets */,
 				BCF2010F216C6AE100C9E49C /* LaunchScreen.storyboard */,
@@ -121,7 +139,6 @@
 				BC610BA621700F04007AC403 /* PartnershipViewController.swift */,
 				BC610BA821700FAB007AC403 /* BookYourSpaceViewController.swift */,
 				BC610BAA217010B5007AC403 /* AttendTheConferenceViewController.swift */,
-				BC13AA012175DA11003B0D9D /* RoundImage.swift */,
 			);
 			path = "Vizag Fintech Festival";
 			sourceTree = "<group>";
@@ -254,12 +271,15 @@
 				BC610BA3216FE7B4007AC403 /* AgendaDataModel.swift in Sources */,
 				BC610BA921700FAB007AC403 /* BookYourSpaceViewController.swift in Sources */,
 				BCF20109216C6ADB00C9E49C /* ViewController.swift in Sources */,
+				BC13AA062175EA4A003B0D9D /* MediaList.swift in Sources */,
+				BC13AA082175EB03003B0D9D /* MediaCell.swift in Sources */,
 				BCCD4A15216E1A5A00EC330C /* FestivalLineup.swift in Sources */,
 				BC4CA1F1217498450073E21E /* HelpDeskViewController.swift in Sources */,
+				BC13AA0A2175EC1E003B0D9D /* MediaDataModel.swift in Sources */,
 				BCF20107216C6ADB00C9E49C /* AppDelegate.swift in Sources */,
 				BC610B9F216F9411007AC403 /* SpeakerList.swift in Sources */,
-				BC13AA022175DA11003B0D9D /* RoundImage.swift in Sources */,
 				BC4CA1F52174C3330073E21E /* SpeakerCell.swift in Sources */,
+				BC13AA042175E957003B0D9D /* APIs.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -593,6 +593,7 @@ Fintech Honchos will make Golf not just a sport but also a platform where busine
                         <segue destination="XsI-E0-FfJ" kind="show" identifier="fintechValletVizag" id="gtF-1U-nIX"/>
                         <segue destination="g9x-CF-fax" kind="show" identifier="apInnovation" id="daa-OG-fQw"/>
                         <segue destination="baR-qx-Fxd" kind="show" identifier="siteTours" id="QKe-kq-hha"/>
+                        <segue destination="Y6r-nZ-hOf" kind="show" identifier="MediaPartners" id="xQW-FJ-wlN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -2978,6 +2979,14 @@ Whether you are a startup or an MNC, you will get to engage with different prosp
                                                     <color key="textColor" red="0.14901960780000001" green="0.25882352939999997" blue="0.54117647059999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9lM-HT-9dm">
+                                                    <rect key="frame" x="105" y="98" width="37" height="36"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="37" id="BfL-Pg-cnP"/>
+                                                        <constraint firstAttribute="height" constant="36" id="xkK-gL-M6L"/>
+                                                    </constraints>
+                                                    <state key="normal" title="Button" image="linkedin"/>
+                                                </button>
                                             </subviews>
                                         </view>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -2985,11 +2994,14 @@ Whether you are a startup or an MNC, you will get to engage with different prosp
                                             <constraint firstItem="GLy-J9-rOL" firstAttribute="centerX" secondItem="7rO-JA-vCk" secondAttribute="centerX" id="Aam-ON-anR"/>
                                             <constraint firstItem="Wnw-d2-fNd" firstAttribute="centerX" secondItem="7rO-JA-vCk" secondAttribute="centerX" id="Bse-DV-12K"/>
                                             <constraint firstItem="Wnw-d2-fNd" firstAttribute="top" secondItem="7rO-JA-vCk" secondAttribute="topMargin" id="IWQ-Dd-a9N"/>
+                                            <constraint firstItem="9lM-HT-9dm" firstAttribute="leading" secondItem="Wnw-d2-fNd" secondAttribute="trailing" constant="-37" id="Tj4-ef-wJS"/>
                                             <constraint firstItem="TeH-IB-WoF" firstAttribute="top" secondItem="Wnw-d2-fNd" secondAttribute="bottom" constant="8" id="oB1-OR-2Ji"/>
                                             <constraint firstItem="Wnw-d2-fNd" firstAttribute="centerX" secondItem="TeH-IB-WoF" secondAttribute="centerX" id="qzO-c2-UXh"/>
                                             <constraint firstItem="GLy-J9-rOL" firstAttribute="top" secondItem="TeH-IB-WoF" secondAttribute="bottom" constant="2" id="rVZ-xv-V4X"/>
+                                            <constraint firstItem="9lM-HT-9dm" firstAttribute="top" secondItem="Wnw-d2-fNd" secondAttribute="bottom" constant="-35" id="wVY-Ey-Vhm"/>
                                         </constraints>
                                         <connections>
+                                            <outlet property="linkedInButton" destination="9lM-HT-9dm" id="NdP-s9-lDL"/>
                                             <outlet property="speakerDesignation" destination="GLy-J9-rOL" id="LmM-K2-awf"/>
                                             <outlet property="speakerImage" destination="Wnw-d2-fNd" id="nuI-dA-iDm"/>
                                             <outlet property="speakerName" destination="TeH-IB-WoF" id="IIl-H5-Awr"/>
@@ -3026,6 +3038,107 @@ Whether you are a startup or an MNC, you will get to engage with different prosp
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QBx-2P-Wfe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="944.79999999999995" y="-1273.313343328336"/>
+        </scene>
+        <!--Media List-->
+        <scene sceneID="GQ4-fl-Pvt">
+            <objects>
+                <viewController id="Y6r-nZ-hOf" customClass="MediaList" customModule="Vizag_Fintech_Festival" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sD9-uz-0j7">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="header" translatesAutoresizingMaskIntoConstraints="NO" id="aG5-yI-lhg">
+                                <rect key="frame" x="0.0" y="64" width="375" height="86"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="white_logo" translatesAutoresizingMaskIntoConstraints="NO" id="g3y-yq-Ogx">
+                                <rect key="frame" x="10" y="72" width="103" height="70"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rEg-0N-wmh">
+                                <rect key="frame" x="0.0" y="148" width="375" height="44"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MEDIA PARTNERS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PMt-cv-PHg">
+                                        <rect key="frame" x="0.0" y="12" width="375" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="375" id="f2x-VW-5BO"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.88543586519999995" green="0.90506094579999996" blue="0.91376506970000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="PMt-cv-PHg" firstAttribute="centerX" secondItem="rEg-0N-wmh" secondAttribute="centerX" id="WrD-02-w0R"/>
+                                    <constraint firstItem="PMt-cv-PHg" firstAttribute="top" secondItem="rEg-0N-wmh" secondAttribute="top" constant="12" id="ynU-OB-AQZ"/>
+                                </constraints>
+                            </view>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="FJ1-Xp-swv">
+                                <rect key="frame" x="0.0" y="192" width="375" height="475"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="zJ8-0k-Nku">
+                                    <size key="itemSize" width="179" height="95"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MediaCell" id="laG-SK-fRR" customClass="MediaCell" customModule="Vizag_Fintech_Festival" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="179" height="95"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="179" height="95"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="koQ-u0-cet">
+                                                    <rect key="frame" x="41" y="31.5" width="97" height="32"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="97" id="Iap-Rh-wZb"/>
+                                                        <constraint firstAttribute="height" constant="32" id="RJL-8C-fCD"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                        </view>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="tintColor" red="0.14901960780000001" green="0.25882352939999997" blue="0.54117647059999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="koQ-u0-cet" firstAttribute="centerX" secondItem="laG-SK-fRR" secondAttribute="centerX" id="jay-SC-goc"/>
+                                            <constraint firstItem="koQ-u0-cet" firstAttribute="centerY" secondItem="laG-SK-fRR" secondAttribute="centerY" id="rAF-QT-QxI"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="mediaImage" destination="koQ-u0-cet" id="qDy-og-arP"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="eQa-cr-mGQ" firstAttribute="bottom" secondItem="aG5-yI-lhg" secondAttribute="bottom" constant="517" id="BW2-a3-CJT"/>
+                            <constraint firstItem="eQa-cr-mGQ" firstAttribute="trailing" secondItem="FJ1-Xp-swv" secondAttribute="trailing" id="Bou-Fn-ZT3"/>
+                            <constraint firstItem="g3y-yq-Ogx" firstAttribute="centerY" secondItem="aG5-yI-lhg" secondAttribute="centerY" id="EKi-gJ-3H2"/>
+                            <constraint firstItem="rEg-0N-wmh" firstAttribute="leading" secondItem="aG5-yI-lhg" secondAttribute="leading" id="OFT-4c-mIl"/>
+                            <constraint firstItem="FJ1-Xp-swv" firstAttribute="leading" secondItem="eQa-cr-mGQ" secondAttribute="leading" id="Rf0-Br-c8L"/>
+                            <constraint firstItem="rEg-0N-wmh" firstAttribute="top" secondItem="g3y-yq-Ogx" secondAttribute="bottom" constant="6" id="SlB-XT-1Pm"/>
+                            <constraint firstItem="eQa-cr-mGQ" firstAttribute="bottom" secondItem="rEg-0N-wmh" secondAttribute="bottom" constant="475" id="TlV-Fe-RuK"/>
+                            <constraint firstItem="FJ1-Xp-swv" firstAttribute="top" secondItem="rEg-0N-wmh" secondAttribute="bottom" id="Y4H-4Z-NeC"/>
+                            <constraint firstItem="eQa-cr-mGQ" firstAttribute="trailing" secondItem="g3y-yq-Ogx" secondAttribute="trailing" constant="262" id="aoD-YL-gzF"/>
+                            <constraint firstItem="eQa-cr-mGQ" firstAttribute="bottom" secondItem="FJ1-Xp-swv" secondAttribute="bottom" id="blX-HP-Yab"/>
+                            <constraint firstItem="aG5-yI-lhg" firstAttribute="leading" secondItem="sD9-uz-0j7" secondAttribute="leading" id="lqt-Y1-tYQ"/>
+                            <constraint firstAttribute="trailing" secondItem="aG5-yI-lhg" secondAttribute="trailing" id="oao-eA-ZE8"/>
+                            <constraint firstItem="g3y-yq-Ogx" firstAttribute="leading" secondItem="eQa-cr-mGQ" secondAttribute="leading" constant="10" id="qrF-yU-T2k"/>
+                            <constraint firstItem="rEg-0N-wmh" firstAttribute="trailing" secondItem="aG5-yI-lhg" secondAttribute="trailing" id="sP8-bo-KO0"/>
+                            <constraint firstItem="g3y-yq-Ogx" firstAttribute="top" secondItem="eQa-cr-mGQ" secondAttribute="top" constant="8" id="sbP-kz-P9o"/>
+                            <constraint firstItem="aG5-yI-lhg" firstAttribute="top" secondItem="eQa-cr-mGQ" secondAttribute="top" id="yjp-hD-byq"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="eQa-cr-mGQ"/>
+                    </view>
+                    <connections>
+                        <outlet property="collectionView" destination="FJ1-Xp-swv" id="dBF-Ms-XIp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6ZK-dz-8PE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-132" y="-1273.313343328336"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="scM-q0-NBj">
@@ -5374,6 +5487,7 @@ Whether you are a startup or an MNC, you will get to engage with different prosp
         <image name="imgnew" width="35" height="35"/>
         <image name="insuretech" width="45" height="50"/>
         <image name="layout" width="42" height="42"/>
+        <image name="linkedin" width="128" height="128"/>
         <image name="london" width="335" height="344"/>
         <image name="millionb2" width="400" height="266"/>
         <image name="millionb3" width="400" height="292"/>

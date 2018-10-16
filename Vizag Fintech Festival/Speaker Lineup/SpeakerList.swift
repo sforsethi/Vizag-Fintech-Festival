@@ -36,30 +36,6 @@ class SpeakerList : UIViewController, UICollectionViewDataSource,UICollectionVie
     }
     // MARK - Networking
     
-    
-    
-//    func downloadJson() {
-//        guard let downloadURL = SPEAKER_URL else { return }
-//        URLSession.shared.dataTask(with: downloadURL) { data, urlResponse, error in
-//            guard let data = data, error == nil, urlResponse != nil else {
-//                print("something is wrong")
-//                return
-//            }
-//            print("downloaded")
-//            do
-//            {
-//                let decoder = JSONDecoder()
-//                let speakers = try decoder.decode(Speakers.self, from: data)
-//                print(speakers.speakers[0].name)
-//                print(speakers)
-//            } catch {
-//                print("something wrong after downloaded")
-//            }
-//            }.resume()
-//    }
-    
-    
-    
     func getSpeakerData(url : String)   {
         Alamofire.request(url, method: .post).responseJSON { response in
             if response.result.isSuccess    {
@@ -80,7 +56,7 @@ class SpeakerList : UIViewController, UICollectionViewDataSource,UICollectionVie
     func updateSpeakerData(json : JSON)  {
 
         var i = 0
-        while(i < 58)    {
+        while(i <= 58)    {
 
             var temp1 = json["speaker"][i]["name"].stringValue
             var temp2 = json["speaker"][i]["designation"].stringValue
@@ -124,6 +100,13 @@ class SpeakerList : UIViewController, UICollectionViewDataSource,UICollectionVie
                 }
             }
         }
+        
+        if speakers2[indexPath.row].linkedIn == "null"  {
+            cell.linkedInButton.isHidden = true
+        }
+        else    {
+            cell.linkedInButton.isHidden = false
+        }
         return cell
         
         }
@@ -132,6 +115,7 @@ class SpeakerList : UIViewController, UICollectionViewDataSource,UICollectionVie
         if let url = URL(string: speakers2[indexPath.row].linkedIn!) {
             UIApplication.shared.open(url, options: [:])
         }
+        
     }
     
     

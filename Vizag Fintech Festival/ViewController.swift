@@ -75,9 +75,11 @@ class ViewController: UIViewController {
         let publicRelationsOptions = UIAlertController(title: "Public Relations", message: "", preferredStyle: .actionSheet)
         let sup = UIAlertAction(title: "Supporting Associates", style: .default) { (UIAlertAction) in
             //
+            self.performSegue(withIdentifier: "siteTours", sender: Any?.self)
         }
         let media = UIAlertAction(title: "Media Partners", style: .default) { (UIAlertAction) in
             //
+            self.performSegue(withIdentifier: "MediaPartners", sender: Any?.self)
         }
         let media2 = UIAlertAction(title: "Media Acceditation", style: .default) { (UIAlertAction) in
             //
