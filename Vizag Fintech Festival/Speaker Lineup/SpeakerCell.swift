@@ -13,4 +13,10 @@ class SpeakerCell: UICollectionViewCell {
     @IBOutlet weak var speakerDesignation: UILabel!
     @IBOutlet weak var speakerName: UILabel!
     @IBOutlet weak var speakerImage: UIImageView!
+    
+    func setRounded() {
+        
+        speakerImage.layer.cornerRadius = self.speakerImage.frame.size.width / 2;
+        speakerImage.layer.masksToBounds = true
+    }
 }

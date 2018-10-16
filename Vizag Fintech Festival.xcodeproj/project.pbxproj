@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BC13AA022175DA11003B0D9D /* RoundImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC13AA012175DA11003B0D9D /* RoundImage.swift */; };
 		BC4CA1F1217498450073E21E /* HelpDeskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4CA1F0217498450073E21E /* HelpDeskViewController.swift */; };
 		BC4CA1F52174C3330073E21E /* SpeakerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4CA1F42174C3330073E21E /* SpeakerCell.swift */; };
 		BC610B9F216F9411007AC403 /* SpeakerList.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC610B9E216F9411007AC403 /* SpeakerList.swift */; };
@@ -28,6 +29,7 @@
 		22D453E09BD68DB0AB45F90D /* Pods_Vizag_Fintech_Festival.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Vizag_Fintech_Festival.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F70C9189ECCC0481565CA31 /* Pods-Vizag Fintech Festival.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vizag Fintech Festival.release.xcconfig"; path = "Target Support Files/Pods-Vizag Fintech Festival/Pods-Vizag Fintech Festival.release.xcconfig"; sourceTree = "<group>"; };
 		7379C29FD24254F46D65EB40 /* Pods-Vizag Fintech Festival.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vizag Fintech Festival.debug.xcconfig"; path = "Target Support Files/Pods-Vizag Fintech Festival/Pods-Vizag Fintech Festival.debug.xcconfig"; sourceTree = "<group>"; };
+		BC13AA012175DA11003B0D9D /* RoundImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundImage.swift; sourceTree = "<group>"; };
 		BC4CA1F0217498450073E21E /* HelpDeskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpDeskViewController.swift; sourceTree = "<group>"; };
 		BC4CA1F42174C3330073E21E /* SpeakerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakerCell.swift; sourceTree = "<group>"; };
 		BC610B9E216F9411007AC403 /* SpeakerList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakerList.swift; sourceTree = "<group>"; };
@@ -119,6 +121,7 @@
 				BC610BA621700F04007AC403 /* PartnershipViewController.swift */,
 				BC610BA821700FAB007AC403 /* BookYourSpaceViewController.swift */,
 				BC610BAA217010B5007AC403 /* AttendTheConferenceViewController.swift */,
+				BC13AA012175DA11003B0D9D /* RoundImage.swift */,
 			);
 			path = "Vizag Fintech Festival";
 			sourceTree = "<group>";
@@ -255,6 +258,7 @@
 				BC4CA1F1217498450073E21E /* HelpDeskViewController.swift in Sources */,
 				BCF20107216C6ADB00C9E49C /* AppDelegate.swift in Sources */,
 				BC610B9F216F9411007AC403 /* SpeakerList.swift in Sources */,
+				BC13AA022175DA11003B0D9D /* RoundImage.swift in Sources */,
 				BC4CA1F52174C3330073E21E /* SpeakerCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

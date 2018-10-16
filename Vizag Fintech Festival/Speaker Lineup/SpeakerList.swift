@@ -15,6 +15,8 @@ class SpeakerList : UIViewController, UICollectionViewDataSource,UICollectionVie
 
     
     var speakers2 : [Speaker] = []
+    var speakersMain : [Speaker] = []
+
     @IBOutlet weak var collectionView: UICollectionView!
     final let SPEAKER_URL = "https://www.vizagfintechfestival.com/fintech-app/speaker.json"
     let BASEIMAGEURL = "https://www.vizagfintechfestival.com/images/experts/new/"
@@ -66,9 +68,11 @@ class SpeakerList : UIViewController, UICollectionViewDataSource,UICollectionVie
                 let speakerData : JSON = JSON(response.result.value!)
                 //print(speakerData)
                 DispatchQueue.main.async {
+                    self.collectionView.reloadData()
                 }
                 
                 self.updateSpeakerData(json : speakerData)
+                self.collectionView.reloadData()
             }
         }
     }
@@ -87,22 +91,28 @@ class SpeakerList : UIViewController, UICollectionViewDataSource,UICollectionVie
 
             speakers2.append(obj)
             i += 1
+            collectionView.reloadData()
+            
         }
+        self.collectionView.reloadData()
+        speakersMain = speakers2
+        print(speakers2[0].name)
     }
 
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         
-        print(speakers2.count)
-        return 58
+        print(speakersMain.count)
+        return speakersMain.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "SpeakerCell", for: indexPath) as! SpeakerCell
-        cell.speakerName!.text = "hello"
-        print(speakers2[indexPath.row].name)
+
         cell.speakerName!.text = speakers2[indexPath.row].name
         cell.speakerDesignation!.text = speakers2[indexPath.row].designation
+        
+        cell.setRounded()
         if let imageURL = URL(string: speakers2[indexPath.row].photoUrl!) {
             DispatchQueue.global().async {
                 let data = try? Data(contentsOf: imageURL)
@@ -117,6 +127,12 @@ class SpeakerList : UIViewController, UICollectionViewDataSource,UICollectionVie
         return cell
         
         }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        if let url = URL(string: speakers2[indexPath.row].linkedIn!) {
+            UIApplication.shared.open(url, options: [:])
+        }
+    }
     
     
 }
