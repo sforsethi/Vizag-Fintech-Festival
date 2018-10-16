@@ -11,27 +11,26 @@ import Alamofire
 import SwiftyJSON
 
 
-class SpeakerList: UIViewController {
+class SpeakerList : UIViewController, UICollectionViewDataSource,UICollectionViewDelegate {
+
     
-    @IBOutlet weak var tableView: UITableView!
+    var speakers2 : [Speaker] = []
+    @IBOutlet weak var collectionView: UICollectionView!
     final let SPEAKER_URL = "https://www.vizagfintechfestival.com/fintech-app/speaker.json"
     let BASEIMAGEURL = "https://www.vizagfintechfestival.com/images/experts/new/"
-    var speakers : [Speaker] = []
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
         
-        tableView.delegate = self
-        tableView.dataSource = self
+        collectionView.delegate = self
+        collectionView.dataSource = self
         
         
-        self.tableView.rowHeight = 230
         //downloadJson()
         getSpeakerData(url: SPEAKER_URL)
-        // Do any additional setup after loading the view.
-        //tableView.register(UINib(nibName: "SpeakerCell", bundle: nil), forCellReuseIdentifier: "speakerCell")
-        tableView.reloadData()
+
     }
     // MARK - Networking
     
@@ -67,16 +66,14 @@ class SpeakerList: UIViewController {
                 let speakerData : JSON = JSON(response.result.value!)
                 //print(speakerData)
                 DispatchQueue.main.async {
-                    self.tableView.reloadData()
                 }
                 
-                self.updateSpeakerData(json: speakerData)
-                self.tableView.reloadData()
+                self.updateSpeakerData(json : speakerData)
             }
         }
     }
 
-    func updateSpeakerData(json : JSON)    {
+    func updateSpeakerData(json : JSON)  {
 
         var i = 0
         while(i < 58)    {
@@ -88,55 +85,25 @@ class SpeakerList: UIViewController {
 
             let obj = Speaker(name: temp1, designation: temp2, photoUrl: temp3, linkedIn: temp4)
 
-            speakers.append(obj)
+            speakers2.append(obj)
             i += 1
-            tableView.reloadData()
         }
-            self.tableView.reloadData()
-        
-        
-        print(speakers[2].designation)
-        print(speakers[6].photoUrl!)
-        print(speakers.count)
+    }
 
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        
+        print(speakers2.count)
+        return 58
     }
     
-//    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-//        return speakers.count
-//
-//    }
-//
-//    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-//
-//         let cell = tableView.dequeueReusableCell(withIdentifier: "SpeakerCell", for: indexPath) as! SpeakerCell
-//
-//         cell.speakerName?.text = speakers[indexPath.row].name
-//         cell.speakerDesignation?.text = speakers[indexPath.row].designation
-//
-////        print(speakers.count)
-////        print(speakers[indexPath.row].name)
-////        tableView.reloadData()
-//
-//        return cell
-//
-//    }
-}
-
-extension SpeakerList: UITableViewDataSource,UITableViewDelegate    {
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return speakers.count
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
-        let cell = tableView.dequeueReusableCell(withIdentifier: "SpeakerCell") as! SpeakerCell
-        
-        let name = speakers[indexPath.row].name
-        cell.speakerName!.text = name
-        let designation = speakers[indexPath.row].designation
-        cell.speakerDesignation!.text = designation
-
-        if let imageURL = URL(string: speakers[indexPath.row].photoUrl!) {
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "SpeakerCell", for: indexPath) as! SpeakerCell
+        cell.speakerName!.text = "hello"
+        print(speakers2[indexPath.row].name)
+        cell.speakerName!.text = speakers2[indexPath.row].name
+        cell.speakerDesignation!.text = speakers2[indexPath.row].designation
+        if let imageURL = URL(string: speakers2[indexPath.row].photoUrl!) {
             DispatchQueue.global().async {
                 let data = try? Data(contentsOf: imageURL)
                 if let data = data {
@@ -147,13 +114,44 @@ extension SpeakerList: UITableViewDataSource,UITableViewDelegate    {
                 }
             }
         }
-
-        
-        
         return cell
-    }
+        
+        }
     
     
 }
+
+
+
+//extension SpeakerList : UICollectionViewDelegate, UICollectionViewDataSource    {
+//    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+//        return speakers.count
+//
+//    }
+//
+//    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+//        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "SpeakerCell", for: indexPath) as! SpeakerCell
+//        cell.speakerName!.text = "hello"
+//        cell.speakerName!.text = speakers[indexPath.row].name
+//        cell.speakerDesignation!.text = speakers[indexPath.row].designation
+//
+//                if let imageURL = URL(string: speakers[indexPath.row].photoUrl!) {
+//                    DispatchQueue.global().async {
+//                        let data = try? Data(contentsOf: imageURL)
+//                        if let data = data {
+//                            let image = UIImage(data: data)
+//                            DispatchQueue.main.async {
+//                                cell.speakerImage!.image = image
+//                            }
+//                        }
+//                    }
+//                }
+//        return cell
+//
+//    }
+//
+//}
+
+
     
 

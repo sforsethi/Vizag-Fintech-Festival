@@ -8,13 +8,9 @@
 
 import UIKit
 
-class SpeakerCell: UITableViewCell {
-
-    @IBOutlet weak var speakerImage: UIImageView?
+class SpeakerCell: UICollectionViewCell {
+    
     @IBOutlet weak var speakerDesignation: UILabel!
     @IBOutlet weak var speakerName: UILabel!
-
-
-    
-
+    @IBOutlet weak var speakerImage: UIImageView!
 }
