@@ -10,50 +10,27 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    @IBAction func exploreButton(_ sender: UIButton) {
-    
-        
-        let exploreOptions = UIAlertController(title: "Explore Vizag", message: "", preferredStyle: .actionSheet)
-        
-        let sightseeing = UIAlertAction(title: "SightSeeing", style: .default) { (UIAlertAction) in
-            //siteTours
-            self.performSegue(withIdentifier: "siteTours", sender: Any?.self)
-        }
-        let accomodation = UIAlertAction(title: "Accomodation", style: .default) { (UIAlertAction) in
-            //
-        }
-        let cancelOption = UIAlertAction(title: "Cancel", style: .cancel) { (UIAlertAction) in
-            //
-        }
-        
-        exploreOptions.addAction(sightseeing)
-        exploreOptions.addAction(accomodation)
-        exploreOptions.addAction(cancelOption)
-        
-        present(exploreOptions, animated: true) {
-            //
-        }
-        
-    }
-    
     @IBAction func aboutUsButton(_ sender: Any) {
         let aboutOptions = UIAlertController(title: "About Us", message: "", preferredStyle: .actionSheet)
         
         let sunriseState = UIAlertAction(title: "Sunrise State", style: .default) { (UIAlertAction) in
-            //sunriseState
-            self.performSegue(withIdentifier: "sunriseState", sender: Any?.self)
+            //
+        self.performSegue(withIdentifier: "sunriseState", sender: Any?.self)
         }
         let fintechValley = UIAlertAction(title: "Fintech Valley Vizag", style: .default) { (UIAlertAction) in
-            //fintechValletVizag
+            //
             self.performSegue(withIdentifier: "fintechValletVizag", sender: Any?.self)
+
         }
         let innovation = UIAlertAction(title: "AP Innovation Society", style: .default) { (UIAlertAction) in
-            //apInnovation
+            //
             self.performSegue(withIdentifier: "apInnovation", sender: Any?.self)
-            
+
         }
         let past = UIAlertAction(title: "Past Events", style: .default) { (UIAlertAction) in
-            //
+            //pastEvents
+            self.performSegue(withIdentifier: "pastEvents", sender: Any?.self)
+
         }
         let cancelOption = UIAlertAction(title: "Cancel", style: .cancel) { (UIAlertAction) in
             //
@@ -69,13 +46,41 @@ class ViewController: UIViewController {
             //
         }
     }
+    @IBAction func exploreButton(_ sender: UIButton) {
+    
+        
+        let exploreOptions = UIAlertController(title: "Explore Vizag", message: "", preferredStyle: .actionSheet)
+        
+        let sightseeing = UIAlertAction(title: "SightSeeing", style: .default) { (UIAlertAction) in
+            //siteTours
+            self.performSegue(withIdentifier: "siteTours", sender: Any?.self)
+        }
+        let accomodation = UIAlertAction(title: "Accomodation", style: .default) { (UIAlertAction) in
+            //accomodation
+            self.performSegue(withIdentifier: "accomodation", sender: Any?.self)
+
+        }
+        let cancelOption = UIAlertAction(title: "Cancel", style: .cancel) { (UIAlertAction) in
+            //
+        }
+        
+        exploreOptions.addAction(sightseeing)
+        exploreOptions.addAction(accomodation)
+        exploreOptions.addAction(cancelOption)
+        
+        present(exploreOptions, animated: true) {
+            //
+        }
+        
+    }
+    
     @IBAction func publicButton(_ sender: Any) {
         
         
         let publicRelationsOptions = UIAlertController(title: "Public Relations", message: "", preferredStyle: .actionSheet)
         let sup = UIAlertAction(title: "Supporting Associates", style: .default) { (UIAlertAction) in
             //
-            self.performSegue(withIdentifier: "siteTours", sender: Any?.self)
+            self.performSegue(withIdentifier: "supportingAssociations", sender: Any?.self)
         }
         let media = UIAlertAction(title: "Media Partners", style: .default) { (UIAlertAction) in
             //

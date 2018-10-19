@@ -58,10 +58,10 @@ class SpeakerList : UIViewController, UICollectionViewDataSource,UICollectionVie
         var i = 0
         while(i <= 58)    {
 
-            var temp1 = json["speaker"][i]["name"].stringValue
-            var temp2 = json["speaker"][i]["designation"].stringValue
-            var temp3 = BASEIMAGEURL + json["speaker"][i]["photoUrl"].stringValue
-            var temp4 = json["speaker"][i]["linkedIn"].stringValue
+            let temp1 = json["speaker"][i]["name"].stringValue
+            let temp2 = json["speaker"][i]["designation"].stringValue
+            let temp3 = BASEIMAGEURL + json["speaker"][i]["photoUrl"].stringValue
+            let temp4 = json["speaker"][i]["linkedIn"].stringValue
 
             let obj = Speaker(name: temp1, designation: temp2, photoUrl: temp3, linkedIn: temp4)
 
@@ -122,35 +122,6 @@ class SpeakerList : UIViewController, UICollectionViewDataSource,UICollectionVie
 }
 
 
-
-//extension SpeakerList : UICollectionViewDelegate, UICollectionViewDataSource    {
-//    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-//        return speakers.count
-//
-//    }
-//
-//    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-//        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "SpeakerCell", for: indexPath) as! SpeakerCell
-//        cell.speakerName!.text = "hello"
-//        cell.speakerName!.text = speakers[indexPath.row].name
-//        cell.speakerDesignation!.text = speakers[indexPath.row].designation
-//
-//                if let imageURL = URL(string: speakers[indexPath.row].photoUrl!) {
-//                    DispatchQueue.global().async {
-//                        let data = try? Data(contentsOf: imageURL)
-//                        if let data = data {
-//                            let image = UIImage(data: data)
-//                            DispatchQueue.main.async {
-//                                cell.speakerImage!.image = image
-//                            }
-//                        }
-//                    }
-//                }
-//        return cell
-//
-//    }
-//
-//}
 
 
     

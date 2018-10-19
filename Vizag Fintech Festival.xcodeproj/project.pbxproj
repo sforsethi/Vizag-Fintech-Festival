@@ -11,11 +11,27 @@
 		BC13AA062175EA4A003B0D9D /* MediaList.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC13AA052175EA4A003B0D9D /* MediaList.swift */; };
 		BC13AA082175EB03003B0D9D /* MediaCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC13AA072175EB03003B0D9D /* MediaCell.swift */; };
 		BC13AA0A2175EC1E003B0D9D /* MediaDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC13AA092175EC1E003B0D9D /* MediaDataModel.swift */; };
+		BC13AA0D2175FF84003B0D9D /* SupportingAssociationsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC13AA0C2175FF84003B0D9D /* SupportingAssociationsList.swift */; };
+		BC13AA10217600F7003B0D9D /* SupportingAssociatesCell1.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC13AA0F217600F7003B0D9D /* SupportingAssociatesCell1.swift */; };
+		BC13AA1221760115003B0D9D /* SupportingAssociatesCell2.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC13AA1121760115003B0D9D /* SupportingAssociatesCell2.swift */; };
+		BC13AA14217603AB003B0D9D /* SupportingAssociatesDataModel1.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC13AA13217603AB003B0D9D /* SupportingAssociatesDataModel1.swift */; };
+		BC13AA17217749A7003B0D9D /* PastEventsDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC13AA16217749A7003B0D9D /* PastEventsDataModel.swift */; };
+		BC13AA1921774A54003B0D9D /* PastEventsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC13AA1821774A54003B0D9D /* PastEventsCell.swift */; };
+		BC13AA1B21774B1E003B0D9D /* PastEventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC13AA1A21774B1E003B0D9D /* PastEventsViewController.swift */; };
+		BC13AA1E21775C40003B0D9D /* CXOGolfViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC13AA1D21775C40003B0D9D /* CXOGolfViewController.swift */; };
+		BC13AA2021775C6C003B0D9D /* CXORoundtableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC13AA1F21775C6C003B0D9D /* CXORoundtableViewController.swift */; };
+		BC13AA2321775C8D003B0D9D /* ReimagineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC13AA2221775C8D003B0D9D /* ReimagineViewController.swift */; };
+		BC13AA2621776E95003B0D9D /* ConferenceAgendaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC13AA2521776E95003B0D9D /* ConferenceAgendaViewController.swift */; };
+		BC13AA2821776EB7003B0D9D /* AgendaDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC13AA2721776EB7003B0D9D /* AgendaDataModel.swift */; };
+		BC25775F21786B7500F27C4A /* AgendaCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC25775E21786B7500F27C4A /* AgendaCell.swift */; };
+		BC2577612178914700F27C4A /* CXORegistrationForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2577602178914700F27C4A /* CXORegistrationForm.swift */; };
+		BC2577632178964200F27C4A /* RoundtableRegistrationForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2577622178964200F27C4A /* RoundtableRegistrationForm.swift */; };
+		BC257765217898E600F27C4A /* ReimagineForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC257764217898E600F27C4A /* ReimagineForm.swift */; };
+		BC25776B2178C18D00F27C4A /* LoginPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC25776A2178C18D00F27C4A /* LoginPage.swift */; };
 		BC4CA1F1217498450073E21E /* HelpDeskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4CA1F0217498450073E21E /* HelpDeskViewController.swift */; };
 		BC4CA1F52174C3330073E21E /* SpeakerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4CA1F42174C3330073E21E /* SpeakerCell.swift */; };
 		BC610B9F216F9411007AC403 /* SpeakerList.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC610B9E216F9411007AC403 /* SpeakerList.swift */; };
 		BC610BA1216FA9E5007AC403 /* SpeakerDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC610BA0216FA9E5007AC403 /* SpeakerDataModel.swift */; };
-		BC610BA3216FE7B4007AC403 /* AgendaDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC610BA2216FE7B3007AC403 /* AgendaDataModel.swift */; };
 		BC610BA721700F04007AC403 /* PartnershipViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC610BA621700F04007AC403 /* PartnershipViewController.swift */; };
 		BC610BA921700FAB007AC403 /* BookYourSpaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC610BA821700FAB007AC403 /* BookYourSpaceViewController.swift */; };
 		BC610BAB217010B5007AC403 /* AttendTheConferenceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC610BAA217010B5007AC403 /* AttendTheConferenceViewController.swift */; };
@@ -36,11 +52,27 @@
 		BC13AA052175EA4A003B0D9D /* MediaList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaList.swift; sourceTree = "<group>"; };
 		BC13AA072175EB03003B0D9D /* MediaCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaCell.swift; sourceTree = "<group>"; };
 		BC13AA092175EC1E003B0D9D /* MediaDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaDataModel.swift; sourceTree = "<group>"; };
+		BC13AA0C2175FF84003B0D9D /* SupportingAssociationsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupportingAssociationsList.swift; sourceTree = "<group>"; };
+		BC13AA0F217600F7003B0D9D /* SupportingAssociatesCell1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupportingAssociatesCell1.swift; sourceTree = "<group>"; };
+		BC13AA1121760115003B0D9D /* SupportingAssociatesCell2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupportingAssociatesCell2.swift; sourceTree = "<group>"; };
+		BC13AA13217603AB003B0D9D /* SupportingAssociatesDataModel1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupportingAssociatesDataModel1.swift; sourceTree = "<group>"; };
+		BC13AA16217749A7003B0D9D /* PastEventsDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PastEventsDataModel.swift; sourceTree = "<group>"; };
+		BC13AA1821774A54003B0D9D /* PastEventsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PastEventsCell.swift; sourceTree = "<group>"; };
+		BC13AA1A21774B1E003B0D9D /* PastEventsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PastEventsViewController.swift; sourceTree = "<group>"; };
+		BC13AA1D21775C40003B0D9D /* CXOGolfViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CXOGolfViewController.swift; sourceTree = "<group>"; };
+		BC13AA1F21775C6C003B0D9D /* CXORoundtableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CXORoundtableViewController.swift; sourceTree = "<group>"; };
+		BC13AA2221775C8D003B0D9D /* ReimagineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReimagineViewController.swift; sourceTree = "<group>"; };
+		BC13AA2521776E95003B0D9D /* ConferenceAgendaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConferenceAgendaViewController.swift; sourceTree = "<group>"; };
+		BC13AA2721776EB7003B0D9D /* AgendaDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgendaDataModel.swift; sourceTree = "<group>"; };
+		BC25775E21786B7500F27C4A /* AgendaCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgendaCell.swift; sourceTree = "<group>"; };
+		BC2577602178914700F27C4A /* CXORegistrationForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CXORegistrationForm.swift; sourceTree = "<group>"; };
+		BC2577622178964200F27C4A /* RoundtableRegistrationForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundtableRegistrationForm.swift; sourceTree = "<group>"; };
+		BC257764217898E600F27C4A /* ReimagineForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReimagineForm.swift; sourceTree = "<group>"; };
+		BC25776A2178C18D00F27C4A /* LoginPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPage.swift; sourceTree = "<group>"; };
 		BC4CA1F0217498450073E21E /* HelpDeskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpDeskViewController.swift; sourceTree = "<group>"; };
 		BC4CA1F42174C3330073E21E /* SpeakerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakerCell.swift; sourceTree = "<group>"; };
 		BC610B9E216F9411007AC403 /* SpeakerList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakerList.swift; sourceTree = "<group>"; };
 		BC610BA0216FA9E5007AC403 /* SpeakerDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakerDataModel.swift; sourceTree = "<group>"; };
-		BC610BA2216FE7B3007AC403 /* AgendaDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgendaDataModel.swift; sourceTree = "<group>"; };
 		BC610BA621700F04007AC403 /* PartnershipViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartnershipViewController.swift; sourceTree = "<group>"; };
 		BC610BA821700FAB007AC403 /* BookYourSpaceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookYourSpaceViewController.swift; sourceTree = "<group>"; };
 		BC610BAA217010B5007AC403 /* AttendTheConferenceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttendTheConferenceViewController.swift; sourceTree = "<group>"; };
@@ -93,6 +125,47 @@
 			path = "Media Partners";
 			sourceTree = "<group>";
 		};
+		BC13AA0E2175FFD5003B0D9D /* Supporting Associations */ = {
+			isa = PBXGroup;
+			children = (
+				BC13AA0C2175FF84003B0D9D /* SupportingAssociationsList.swift */,
+				BC13AA0F217600F7003B0D9D /* SupportingAssociatesCell1.swift */,
+				BC13AA1121760115003B0D9D /* SupportingAssociatesCell2.swift */,
+				BC13AA13217603AB003B0D9D /* SupportingAssociatesDataModel1.swift */,
+			);
+			path = "Supporting Associations";
+			sourceTree = "<group>";
+		};
+		BC13AA1521774984003B0D9D /* Past Events */ = {
+			isa = PBXGroup;
+			children = (
+				BC13AA16217749A7003B0D9D /* PastEventsDataModel.swift */,
+				BC13AA1821774A54003B0D9D /* PastEventsCell.swift */,
+				BC13AA1A21774B1E003B0D9D /* PastEventsViewController.swift */,
+			);
+			path = "Past Events";
+			sourceTree = "<group>";
+		};
+		BC13AA1C21775C27003B0D9D /* Festival Lineup */ = {
+			isa = PBXGroup;
+			children = (
+				BC13AA1D21775C40003B0D9D /* CXOGolfViewController.swift */,
+				BC13AA2221775C8D003B0D9D /* ReimagineViewController.swift */,
+				BC13AA1F21775C6C003B0D9D /* CXORoundtableViewController.swift */,
+			);
+			path = "Festival Lineup";
+			sourceTree = "<group>";
+		};
+		BC13AA2421776E75003B0D9D /* ConferenceAgenda */ = {
+			isa = PBXGroup;
+			children = (
+				BC13AA2521776E95003B0D9D /* ConferenceAgendaViewController.swift */,
+				BC13AA2721776EB7003B0D9D /* AgendaDataModel.swift */,
+				BC25775E21786B7500F27C4A /* AgendaCell.swift */,
+			);
+			path = ConferenceAgenda;
+			sourceTree = "<group>";
+		};
 		BC1E4C0321721990008B2DA4 /* Speaker Lineup */ = {
 			isa = PBXGroup;
 			children = (
@@ -124,6 +197,10 @@
 		BCF20105216C6ADB00C9E49C /* Vizag Fintech Festival */ = {
 			isa = PBXGroup;
 			children = (
+				BC13AA2421776E75003B0D9D /* ConferenceAgenda */,
+				BC13AA1C21775C27003B0D9D /* Festival Lineup */,
+				BC13AA1521774984003B0D9D /* Past Events */,
+				BC13AA0E2175FFD5003B0D9D /* Supporting Associations */,
 				BC13AA0B2175F608003B0D9D /* Media Partners */,
 				BC1E4C0321721990008B2DA4 /* Speaker Lineup */,
 				BCF20106216C6ADB00C9E49C /* AppDelegate.swift */,
@@ -135,10 +212,13 @@
 				BCF2010F216C6AE100C9E49C /* LaunchScreen.storyboard */,
 				BCF20112216C6AE100C9E49C /* Info.plist */,
 				BCCD4A14216E1A5A00EC330C /* FestivalLineup.swift */,
-				BC610BA2216FE7B3007AC403 /* AgendaDataModel.swift */,
 				BC610BA621700F04007AC403 /* PartnershipViewController.swift */,
 				BC610BA821700FAB007AC403 /* BookYourSpaceViewController.swift */,
 				BC610BAA217010B5007AC403 /* AttendTheConferenceViewController.swift */,
+				BC2577602178914700F27C4A /* CXORegistrationForm.swift */,
+				BC2577622178964200F27C4A /* RoundtableRegistrationForm.swift */,
+				BC257764217898E600F27C4A /* ReimagineForm.swift */,
+				BC25776A2178C18D00F27C4A /* LoginPage.swift */,
 			);
 			path = "Vizag Fintech Festival";
 			sourceTree = "<group>";
@@ -154,7 +234,7 @@
 				BCF200FF216C6ADB00C9E49C /* Sources */,
 				BCF20100216C6ADB00C9E49C /* Frameworks */,
 				BCF20101216C6ADB00C9E49C /* Resources */,
-				6DD77DA07DCD9B881C309F0D /* [CP] Embed Pods Frameworks */,
+				39B9237E56BDA19DF1C73CB2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -234,7 +314,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		6DD77DA07DCD9B881C309F0D /* [CP] Embed Pods Frameworks */ = {
+		39B9237E56BDA19DF1C73CB2 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -266,19 +346,35 @@
 			buildActionMask = 2147483647;
 			files = (
 				BC610BA721700F04007AC403 /* PartnershipViewController.swift in Sources */,
+				BC13AA2821776EB7003B0D9D /* AgendaDataModel.swift in Sources */,
+				BC13AA1B21774B1E003B0D9D /* PastEventsViewController.swift in Sources */,
 				BC610BA1216FA9E5007AC403 /* SpeakerDataModel.swift in Sources */,
 				BC610BAB217010B5007AC403 /* AttendTheConferenceViewController.swift in Sources */,
-				BC610BA3216FE7B4007AC403 /* AgendaDataModel.swift in Sources */,
+				BC13AA0D2175FF84003B0D9D /* SupportingAssociationsList.swift in Sources */,
 				BC610BA921700FAB007AC403 /* BookYourSpaceViewController.swift in Sources */,
 				BCF20109216C6ADB00C9E49C /* ViewController.swift in Sources */,
+				BC13AA2621776E95003B0D9D /* ConferenceAgendaViewController.swift in Sources */,
 				BC13AA062175EA4A003B0D9D /* MediaList.swift in Sources */,
+				BC25775F21786B7500F27C4A /* AgendaCell.swift in Sources */,
 				BC13AA082175EB03003B0D9D /* MediaCell.swift in Sources */,
 				BCCD4A15216E1A5A00EC330C /* FestivalLineup.swift in Sources */,
 				BC4CA1F1217498450073E21E /* HelpDeskViewController.swift in Sources */,
 				BC13AA0A2175EC1E003B0D9D /* MediaDataModel.swift in Sources */,
+				BC25776B2178C18D00F27C4A /* LoginPage.swift in Sources */,
 				BCF20107216C6ADB00C9E49C /* AppDelegate.swift in Sources */,
 				BC610B9F216F9411007AC403 /* SpeakerList.swift in Sources */,
+				BC257765217898E600F27C4A /* ReimagineForm.swift in Sources */,
+				BC2577612178914700F27C4A /* CXORegistrationForm.swift in Sources */,
+				BC13AA2021775C6C003B0D9D /* CXORoundtableViewController.swift in Sources */,
+				BC13AA1921774A54003B0D9D /* PastEventsCell.swift in Sources */,
+				BC13AA1E21775C40003B0D9D /* CXOGolfViewController.swift in Sources */,
+				BC13AA1221760115003B0D9D /* SupportingAssociatesCell2.swift in Sources */,
 				BC4CA1F52174C3330073E21E /* SpeakerCell.swift in Sources */,
+				BC13AA17217749A7003B0D9D /* PastEventsDataModel.swift in Sources */,
+				BC13AA14217603AB003B0D9D /* SupportingAssociatesDataModel1.swift in Sources */,
+				BC13AA2321775C8D003B0D9D /* ReimagineViewController.swift in Sources */,
+				BC13AA10217600F7003B0D9D /* SupportingAssociatesCell1.swift in Sources */,
+				BC2577632178964200F27C4A /* RoundtableRegistrationForm.swift in Sources */,
 				BC13AA042175E957003B0D9D /* APIs.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -362,7 +458,9 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_ENABLE_BATCH_MODE = NO;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
@@ -415,8 +513,9 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_ENABLE_BATCH_MODE = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -434,6 +533,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "raghavsethi.com.Vizag-Fintech-Festival";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

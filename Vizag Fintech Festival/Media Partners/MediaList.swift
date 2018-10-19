@@ -60,8 +60,7 @@ class MediaList: UIViewController, UICollectionViewDelegate, UICollectionViewDat
             
         }
         self.collectionView.reloadData()
-//        speakersMain = speakers2
-//        print(speakers2[0].name)
+
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
