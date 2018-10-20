@@ -885,7 +885,7 @@ Fintech Honchos will make Golf not just a sport but also a platform where busine
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10:30am to  11:15am" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="znH-Os-tyw">
-                                                    <rect key="frame" x="5" y="5" width="81" height="253"/>
+                                                    <rect key="frame" x="5" y="5" width="81" height="250"/>
                                                     <color key="backgroundColor" red="0.14901960780000001" green="0.25882352939999997" blue="0.54117647059999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="81" id="2yU-Kq-yl4"/>
@@ -927,16 +927,7 @@ Fintech Honchos will make Golf not just a sport but also a platform where busine
                                                     <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Host" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xxp-od-rnS">
-                                                    <rect key="frame" x="95" y="85" width="36" height="17"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="36" id="qda-Nw-nVp"/>
-                                                    </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="hostName" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wWW-Vm-04o">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="hostName" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wWW-Vm-04o">
                                                     <rect key="frame" x="129" y="85" width="71" height="17"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="71" id="3DY-kT-1fo"/>
@@ -953,32 +944,33 @@ Fintech Honchos will make Golf not just a sport but also a platform where busine
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qp0-PR-VWb">
-                                                    <rect key="frame" x="91" y="127" width="273" height="129"/>
+                                                    <rect key="frame" x="91" y="127" width="273" height="21"/>
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Swathi Atluri &amp; Troop" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z7a-Ef-s1y">
-                                                            <rect key="frame" x="90" y="58.5" width="183" height="12"/>
-                                                            <constraints>
-                                                                <constraint firstAttribute="width" constant="183" id="1PC-ls-sAH"/>
-                                                                <constraint firstAttribute="height" relation="lessThanOrEqual" constant="18" id="BAv-cZ-HkS"/>
-                                                            </constraints>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="10"/>
-                                                            <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rj6-Ej-g8V">
                                                             <rect key="frame" x="11" y="5" width="28" height="12"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                                             <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Swathi Atluri &amp; Troop" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z7a-Ef-s1y">
+                                                            <rect key="frame" x="90" y="0.0" width="183" height="21"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="183" id="Zcm-Jg-JHP"/>
+                                                                <constraint firstAttribute="height" constant="21" id="wDG-TN-R5e"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                                            <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
                                                     </subviews>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="trailing" secondItem="Z7a-Ef-s1y" secondAttribute="trailing" id="307-Po-U29"/>
-                                                        <constraint firstItem="rj6-Ej-g8V" firstAttribute="height" secondItem="Z7a-Ef-s1y" secondAttribute="height" id="3qV-tI-hxJ"/>
+                                                        <constraint firstItem="Z7a-Ef-s1y" firstAttribute="leading" secondItem="qp0-PR-VWb" secondAttribute="leading" constant="90" id="NM3-Gs-PNK"/>
+                                                        <constraint firstAttribute="height" constant="21" id="SWg-C9-Iey"/>
                                                         <constraint firstItem="rj6-Ej-g8V" firstAttribute="top" secondItem="qp0-PR-VWb" secondAttribute="top" constant="5" id="gTG-tS-Ez3"/>
+                                                        <constraint firstAttribute="width" constant="273" id="kKq-W9-kng"/>
                                                         <constraint firstItem="rj6-Ej-g8V" firstAttribute="leading" secondItem="qp0-PR-VWb" secondAttribute="leading" constant="11" id="mZF-AN-20a"/>
-                                                        <constraint firstItem="Z7a-Ef-s1y" firstAttribute="centerY" secondItem="qp0-PR-VWb" secondAttribute="centerY" id="yQ8-L4-JUH"/>
+                                                        <constraint firstItem="Z7a-Ef-s1y" firstAttribute="top" secondItem="qp0-PR-VWb" secondAttribute="top" id="zkd-D2-zkO"/>
                                                     </constraints>
                                                 </view>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Keynote Speaker:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IF5-cZ-ANs">
@@ -997,17 +989,17 @@ Fintech Honchos will make Golf not just a sport but also a platform where busine
                                                             <rect key="frame" x="143" y="2" width="130" height="36"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="130" id="OXd-Lv-cZB"/>
-                                                                <constraint firstAttribute="height" relation="lessThanOrEqual" constant="56" id="cUG-hX-qsA"/>
+                                                                <constraint firstAttribute="height" relation="lessThanOrEqual" constant="58" id="cUG-hX-qsA"/>
                                                             </constraints>
                                                             <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                                             <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Balasubramanyam N" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VNe-gr-WeW">
-                                                            <rect key="frame" x="8" y="2" width="121" height="12"/>
+                                                            <rect key="frame" x="0.0" y="2" width="129" height="12"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" relation="lessThanOrEqual" constant="12" id="oNR-ic-lOY"/>
-                                                                <constraint firstAttribute="width" constant="121" id="sHS-L1-3K2"/>
+                                                                <constraint firstAttribute="width" constant="129" id="sHS-L1-3K2"/>
                                                             </constraints>
                                                             <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                                             <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1017,12 +1009,11 @@ Fintech Honchos will make Golf not just a sport but also a platform where busine
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <constraints>
                                                         <constraint firstItem="19v-U5-yQt" firstAttribute="leading" secondItem="xVp-Xa-Mzx" secondAttribute="leading" constant="143" id="3Mz-ju-eg5"/>
-                                                        <constraint firstItem="VNe-gr-WeW" firstAttribute="leading" secondItem="xVp-Xa-Mzx" secondAttribute="leading" constant="8" id="Baq-6a-Vz0"/>
-                                                        <constraint firstAttribute="height" relation="lessThanOrEqual" constant="58" id="FB9-OT-aem"/>
+                                                        <constraint firstItem="VNe-gr-WeW" firstAttribute="leading" secondItem="xVp-Xa-Mzx" secondAttribute="leading" id="Baq-6a-Vz0"/>
+                                                        <constraint firstAttribute="height" secondItem="19v-U5-yQt" secondAttribute="height" id="Nix-5f-BU0"/>
                                                         <constraint firstItem="19v-U5-yQt" firstAttribute="top" secondItem="xVp-Xa-Mzx" secondAttribute="top" constant="2" id="U2H-pf-KAT"/>
                                                         <constraint firstItem="VNe-gr-WeW" firstAttribute="top" secondItem="xVp-Xa-Mzx" secondAttribute="top" constant="2" id="q5A-F6-QdP"/>
                                                         <constraint firstAttribute="width" constant="273" id="sTQ-rl-Dem"/>
-                                                        <constraint firstAttribute="height" secondItem="19v-U5-yQt" secondAttribute="height" id="vPO-M1-Ows"/>
                                                     </constraints>
                                                 </view>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Moderator:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qXw-CU-91x">
@@ -1032,7 +1023,7 @@ Fintech Honchos will make Golf not just a sport but also a platform where busine
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ob7-g6-8BG">
-                                                    <rect key="frame" x="91" y="230" width="273" height="28"/>
+                                                    <rect key="frame" x="91" y="230" width="273" height="24"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Balasubramanyam N, IPS, CEO - ePragati Authority" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NC8-BE-Ice">
                                                             <rect key="frame" x="142" y="2" width="131" height="24"/>
@@ -1061,29 +1052,30 @@ Fintech Honchos will make Golf not just a sport but also a platform where busine
                                                         <constraint firstAttribute="width" constant="273" id="Icx-ID-efZ"/>
                                                         <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="273" id="Ivj-cG-luO"/>
                                                         <constraint firstItem="8JU-2I-cZQ" firstAttribute="top" secondItem="Ob7-g6-8BG" secondAttribute="top" constant="2" id="QrT-UY-poa"/>
+                                                        <constraint firstAttribute="height" secondItem="NC8-BE-Ice" secondAttribute="height" id="Sy2-We-7qf"/>
                                                         <constraint firstAttribute="bottom" secondItem="NC8-BE-Ice" secondAttribute="bottom" constant="2" id="T4l-V7-bfW"/>
                                                         <constraint firstAttribute="trailing" secondItem="NC8-BE-Ice" secondAttribute="trailing" id="YIS-gV-aya"/>
-                                                        <constraint firstAttribute="height" relation="lessThanOrEqual" constant="43" id="fes-WS-gzf"/>
                                                         <constraint firstItem="NC8-BE-Ice" firstAttribute="top" secondItem="Ob7-g6-8BG" secondAttribute="top" constant="2" id="i8u-8y-5NP"/>
                                                         <constraint firstItem="NC8-BE-Ice" firstAttribute="leading" secondItem="Ob7-g6-8BG" secondAttribute="leading" constant="142" id="z3s-U7-xL5"/>
                                                     </constraints>
                                                 </view>
-                                                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="wEr-VJ-GjC">
-                                                    <rect key="frame" x="5" y="262" width="360" height="161"/>
+                                                <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="wEr-VJ-GjC">
+                                                    <rect key="frame" x="7" y="291" width="360" height="98"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="161" id="Q2C-Hm-KAe"/>
+                                                        <constraint firstAttribute="width" constant="360" id="0BS-NL-VYr"/>
+                                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="98" id="oh6-jW-bcY"/>
                                                     </constraints>
                                                     <prototypes>
-                                                        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="PanelistCell" rowHeight="26" id="2sK-8k-hxd">
-                                                            <rect key="frame" x="0.0" y="28" width="360" height="26"/>
+                                                        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="PanelistCell" rowHeight="43" id="2sK-8k-hxd" customClass="TableViewCell" customModule="Vizag_Fintech_Festival" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="28" width="360" height="43"/>
                                                             <autoresizingMask key="autoresizingMask"/>
                                                             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="2sK-8k-hxd" id="Yc9-Ka-90m">
-                                                                <rect key="frame" x="0.0" y="0.0" width="360" height="25.5"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="360" height="42.5"/>
                                                                 <autoresizingMask key="autoresizingMask"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hud-oF-7FH">
-                                                                        <rect key="frame" x="6" y="5" width="174" height="15.5"/>
+                                                                        <rect key="frame" x="6" y="5" width="174" height="32.5"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="width" constant="174" id="63n-aO-UdW"/>
                                                                         </constraints>
@@ -1091,10 +1083,10 @@ Fintech Honchos will make Golf not just a sport but also a platform where busine
                                                                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rbr-5T-jxZ">
-                                                                        <rect key="frame" x="181" y="6" width="175" height="12"/>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rbr-5T-jxZ">
+                                                                        <rect key="frame" x="137" y="6" width="219" height="31.5"/>
                                                                         <constraints>
-                                                                            <constraint firstAttribute="width" constant="175" id="JCC-Y8-vvD"/>
+                                                                            <constraint firstAttribute="width" constant="219" id="JCC-Y8-vvD"/>
                                                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="12" id="RQ0-Qv-SAx"/>
                                                                         </constraints>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="10"/>
@@ -1104,60 +1096,74 @@ Fintech Honchos will make Golf not just a sport but also a platform where busine
                                                                 </subviews>
                                                                 <constraints>
                                                                     <constraint firstItem="hud-oF-7FH" firstAttribute="leading" secondItem="Yc9-Ka-90m" secondAttribute="leading" constant="6" id="24t-0d-Wqr"/>
-                                                                    <constraint firstItem="Rbr-5T-jxZ" firstAttribute="centerX" secondItem="Yc9-Ka-90m" secondAttribute="centerX" constant="14.5" id="KiC-ME-XuC"/>
+                                                                    <constraint firstAttribute="trailing" secondItem="Rbr-5T-jxZ" secondAttribute="trailing" id="5Oz-jb-JPA"/>
+                                                                    <constraint firstItem="Rbr-5T-jxZ" firstAttribute="centerX" secondItem="Yc9-Ka-90m" secondAttribute="centerX" constant="66.5" id="KiC-ME-XuC"/>
                                                                     <constraint firstItem="hud-oF-7FH" firstAttribute="top" secondItem="Yc9-Ka-90m" secondAttribute="top" constant="5" id="Pcy-gp-bQh"/>
                                                                     <constraint firstItem="hud-oF-7FH" firstAttribute="centerY" secondItem="Yc9-Ka-90m" secondAttribute="centerY" id="Rfg-6b-EAL"/>
-                                                                    <constraint firstItem="Rbr-5T-jxZ" firstAttribute="leading" secondItem="hud-oF-7FH" secondAttribute="trailing" constant="1" id="fea-as-fxZ"/>
+                                                                    <constraint firstItem="Rbr-5T-jxZ" firstAttribute="top" secondItem="Yc9-Ka-90m" secondAttribute="top" constant="5" id="ebS-jk-IPb"/>
+                                                                    <constraint firstItem="Rbr-5T-jxZ" firstAttribute="leading" secondItem="hud-oF-7FH" secondAttribute="trailing" constant="-43" id="fea-as-fxZ"/>
                                                                     <constraint firstItem="Rbr-5T-jxZ" firstAttribute="top" secondItem="Yc9-Ka-90m" secondAttribute="top" constant="6" id="jFh-Q0-xTc"/>
+                                                                    <constraint firstAttribute="bottom" secondItem="Rbr-5T-jxZ" secondAttribute="bottom" constant="5" id="qXK-he-eot"/>
                                                                 </constraints>
                                                             </tableViewCellContentView>
+                                                            <connections>
+                                                                <outlet property="desLabel" destination="Rbr-5T-jxZ" id="g5y-td-iuG"/>
+                                                                <outlet property="nameLabel" destination="hud-oF-7FH" id="ekZ-hX-dmY"/>
+                                                            </connections>
                                                         </tableViewCell>
                                                     </prototypes>
                                                 </tableView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Panelists:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Bf-cR-ffE">
+                                                    <rect key="frame" x="6" y="260" width="153" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="UNl-au-Scb"/>
+                                                        <constraint firstAttribute="width" constant="153" id="rNr-fo-rIZ"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                         </view>
                                         <color key="backgroundColor" red="0.8862745098" green="0.90588235289999997" blue="0.91372549020000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstItem="Ob7-g6-8BG" firstAttribute="top" secondItem="19v-U5-yQt" secondAttribute="bottom" constant="21" id="04Y-DO-BiL"/>
-                                            <constraint firstItem="wEr-VJ-GjC" firstAttribute="trailing" secondItem="xVp-Xa-Mzx" secondAttribute="trailing" id="8Bc-Q1-o9I"/>
+                                            <constraint firstItem="wEr-VJ-GjC" firstAttribute="top" secondItem="2Bf-cR-ffE" secondAttribute="bottom" constant="6" id="7H2-3E-RAs"/>
                                             <constraint firstItem="xVp-Xa-Mzx" firstAttribute="leading" secondItem="IF5-cZ-ANs" secondAttribute="leading" id="Dc4-sT-MYi"/>
                                             <constraint firstItem="IF5-cZ-ANs" firstAttribute="leading" secondItem="znH-Os-tyw" secondAttribute="trailing" constant="6" id="Dtc-WT-I8R"/>
                                             <constraint firstItem="Ob7-g6-8BG" firstAttribute="leading" secondItem="znH-Os-tyw" secondAttribute="trailing" constant="5" id="Dxa-CD-w9b"/>
                                             <constraint firstItem="Qqm-Wv-mR1" firstAttribute="leading" secondItem="znH-Os-tyw" secondAttribute="trailing" constant="8" id="FKV-HF-dOH"/>
-                                            <constraint firstItem="xxp-od-rnS" firstAttribute="height" secondItem="wWW-Vm-04o" secondAttribute="height" id="FO2-RE-cP1"/>
-                                            <constraint firstAttribute="bottom" secondItem="wEr-VJ-GjC" secondAttribute="bottom" id="GyT-o4-HKW"/>
-                                            <constraint firstItem="xxp-od-rnS" firstAttribute="top" secondItem="8qR-Hv-uMa" secondAttribute="bottom" constant="5.5" id="Ipc-Bv-zKU"/>
                                             <constraint firstItem="rlG-tm-ely" firstAttribute="leading" secondItem="znH-Os-tyw" secondAttribute="trailing" constant="10" id="Ldi-C4-0hr"/>
                                             <constraint firstItem="qp0-PR-VWb" firstAttribute="top" secondItem="A7j-x5-cA4" secondAttribute="top" constant="127" id="MvZ-3R-rYF"/>
                                             <constraint firstItem="8qR-Hv-uMa" firstAttribute="leading" secondItem="qp0-PR-VWb" secondAttribute="trailing" constant="-269" id="Ng8-Sl-c1o"/>
                                             <constraint firstItem="d2a-7h-EQ5" firstAttribute="top" secondItem="A7j-x5-cA4" secondAttribute="top" constant="10" id="O1m-cQ-wWM"/>
-                                            <constraint firstItem="wEr-VJ-GjC" firstAttribute="leading" secondItem="znH-Os-tyw" secondAttribute="leading" id="Pkb-FC-Yz1"/>
+                                            <constraint firstItem="znH-Os-tyw" firstAttribute="leading" secondItem="A7j-x5-cA4" secondAttribute="leading" constant="5" id="OrJ-pM-UY6"/>
                                             <constraint firstItem="8qR-Hv-uMa" firstAttribute="top" secondItem="rlG-tm-ely" secondAttribute="bottom" constant="6" id="Q38-mS-Gmb"/>
                                             <constraint firstItem="rlG-tm-ely" firstAttribute="top" secondItem="d2a-7h-EQ5" secondAttribute="bottom" constant="4" id="QYe-sM-HKp"/>
                                             <constraint firstItem="xVp-Xa-Mzx" firstAttribute="leading" secondItem="znH-Os-tyw" secondAttribute="trailing" constant="6" id="RxY-IO-sLr"/>
                                             <constraint firstItem="wWW-Vm-04o" firstAttribute="top" secondItem="8qR-Hv-uMa" secondAttribute="bottom" constant="5.5" id="Tht-fl-Gc5"/>
+                                            <constraint firstItem="znH-Os-tyw" firstAttribute="leading" secondItem="A7j-x5-cA4" secondAttribute="leading" constant="5" id="Tip-3A-p7G"/>
                                             <constraint firstItem="IF5-cZ-ANs" firstAttribute="top" secondItem="8qR-Hv-uMa" secondAttribute="bottom" constant="70.5" id="V8K-Oc-Iqz"/>
-                                            <constraint firstItem="wWW-Vm-04o" firstAttribute="leading" secondItem="xxp-od-rnS" secondAttribute="trailing" constant="-2" id="W8Y-Qc-hoX"/>
+                                            <constraint firstItem="znH-Os-tyw" firstAttribute="top" secondItem="A7j-x5-cA4" secondAttribute="top" constant="5" id="Vsj-gG-hfj"/>
+                                            <constraint firstItem="2Bf-cR-ffE" firstAttribute="top" secondItem="Ob7-g6-8BG" secondAttribute="bottom" constant="6" id="Wzy-bF-Cdx"/>
                                             <constraint firstItem="qp0-PR-VWb" firstAttribute="trailing" secondItem="8qR-Hv-uMa" secondAttribute="trailing" id="Yc8-RJ-uCh"/>
                                             <constraint firstItem="znH-Os-tyw" firstAttribute="top" secondItem="A7j-x5-cA4" secondAttribute="top" constant="5" id="Zt4-EC-Rv3"/>
+                                            <constraint firstItem="znH-Os-tyw" firstAttribute="top" secondItem="A7j-x5-cA4" secondAttribute="top" constant="5" id="br0-Rb-Ryi"/>
                                             <constraint firstItem="qXw-CU-91x" firstAttribute="top" secondItem="xVp-Xa-Mzx" secondAttribute="bottom" constant="5" id="dwY-DG-IqY"/>
                                             <constraint firstItem="qXw-CU-91x" firstAttribute="leading" secondItem="znH-Os-tyw" secondAttribute="trailing" constant="6" id="gKr-RE-6Wr"/>
-                                            <constraint firstItem="xxp-od-rnS" firstAttribute="leading" secondItem="znH-Os-tyw" secondAttribute="trailing" constant="9" id="iae-z4-VYm"/>
                                             <constraint firstItem="d2a-7h-EQ5" firstAttribute="leading" secondItem="znH-Os-tyw" secondAttribute="trailing" constant="9" id="lP6-fn-z07"/>
-                                            <constraint firstAttribute="bottom" secondItem="qp0-PR-VWb" secondAttribute="bottom" constant="167" id="low-wA-Hij"/>
                                             <constraint firstItem="znH-Os-tyw" firstAttribute="leading" secondItem="A7j-x5-cA4" secondAttribute="leading" constant="5" id="mAE-lD-1hr"/>
+                                            <constraint firstItem="wEr-VJ-GjC" firstAttribute="leading" secondItem="A7j-x5-cA4" secondAttribute="leading" constant="7" id="mlP-g4-xic"/>
                                             <constraint firstItem="xVp-Xa-Mzx" firstAttribute="top" secondItem="IF5-cZ-ANs" secondAttribute="bottom" constant="1" id="myW-IV-BXH"/>
                                             <constraint firstItem="qp0-PR-VWb" firstAttribute="leading" secondItem="znH-Os-tyw" secondAttribute="trailing" constant="5" id="ncg-JJ-eFW"/>
-                                            <constraint firstItem="wEr-VJ-GjC" firstAttribute="top" secondItem="znH-Os-tyw" secondAttribute="bottom" constant="4" id="oh3-83-Rgj"/>
                                             <constraint firstAttribute="trailing" secondItem="Ob7-g6-8BG" secondAttribute="trailing" constant="11" id="vp3-wx-EdF"/>
+                                            <constraint firstItem="2Bf-cR-ffE" firstAttribute="top" secondItem="znH-Os-tyw" secondAttribute="bottom" constant="5" id="won-55-s81"/>
                                             <constraint firstItem="8qR-Hv-uMa" firstAttribute="leading" secondItem="znH-Os-tyw" secondAttribute="trailing" constant="9" id="wuC-ls-eD1"/>
-                                            <constraint firstItem="Qqm-Wv-mR1" firstAttribute="height" relation="lessThanOrEqual" secondItem="qp0-PR-VWb" secondAttribute="height" id="zaL-xu-2tS"/>
+                                            <constraint firstItem="2Bf-cR-ffE" firstAttribute="leading" secondItem="A7j-x5-cA4" secondAttribute="leading" constant="6" id="ygc-UA-MGT"/>
                                             <constraint firstItem="qp0-PR-VWb" firstAttribute="top" secondItem="Qqm-Wv-mR1" secondAttribute="bottom" constant="4" id="zpX-7I-LvV"/>
                                         </constraints>
                                         <connections>
-                                            <outlet property="hostLabel" destination="xxp-od-rnS" id="Sji-iE-oRe"/>
                                             <outlet property="hostName" destination="wWW-Vm-04o" id="Iez-1P-DcG"/>
-                                            <outlet property="hostTitle" destination="xxp-od-rnS" id="4hQ-Lt-FRF"/>
                                             <outlet property="keynoteDes" destination="19v-U5-yQt" id="0c6-sS-Bdt"/>
                                             <outlet property="keynoteName" destination="VNe-gr-WeW" id="KIk-nz-5Yh"/>
                                             <outlet property="keynoteTitle" destination="IF5-cZ-ANs" id="POF-Ns-Af5"/>
@@ -1166,6 +1172,7 @@ Fintech Honchos will make Golf not just a sport but also a platform where busine
                                             <outlet property="moderatorName" destination="8JU-2I-cZQ" id="wBr-e7-pzg"/>
                                             <outlet property="moderatorTitle" destination="qXw-CU-91x" id="wYk-if-YcQ"/>
                                             <outlet property="moderatorView" destination="Ob7-g6-8BG" id="l2T-Ab-AgG"/>
+                                            <outlet property="panelistTitle" destination="2Bf-cR-ffE" id="lvs-qQ-C3z"/>
                                             <outlet property="performerLabel" destination="rj6-Ej-g8V" id="FYj-hF-hNr"/>
                                             <outlet property="performerName" destination="Z7a-Ef-s1y" id="PPI-w0-Wg5"/>
                                             <outlet property="performerTitle" destination="Qqm-Wv-mR1" id="UTo-hu-0yD"/>

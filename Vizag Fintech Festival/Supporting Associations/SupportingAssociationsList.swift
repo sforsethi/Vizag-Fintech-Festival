@@ -60,8 +60,8 @@ class SupportingAssociationsList: UIViewController ,UICollectionViewDataSource, 
         var urls2 = [String]()
         var i = 0
         while i <= 7 {
-            var imageB = json[1]["list"][i]["thumb"].stringValue
-            var url2 = json[1]["list"][i]["url"].stringValue
+            let imageB = json[1]["list"][i]["thumb"].stringValue
+            let url2 = json[1]["list"][i]["url"].stringValue
             imageSecond.append(imageB)
             urls2.append(url2)
             i += 1

@@ -140,10 +140,39 @@ class ConferenceAgendaViewController: UIViewController, UICollectionViewDelegate
             cell.moderatorDes!.text = agendas1[indexPath.row].moderatorDes
             cell.moderatorShow()
         }
+        if agendas1[indexPath.row].panelistName != []   {
+            cell.showPanelist()
+        }
         
         
 
 
         return cell
     }
+     func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
+        
+        guard let collectionViewCell = cell as? AgendaCell else { return }
+        
+        collectionViewCell.setTableViewDataSourceDelegate(dataSourceDelegate: self, forRow: indexPath.row)
+        }
+    }
+
+extension ConferenceAgendaViewController : UITableViewDataSource, UITableViewDelegate   {
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 3
+        
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "PanelistCell",for: indexPath) as! TableViewCell
+        
+        if agendas1[tableView.tag].panelistName != []   {
+        cell.nameLabel!.text = agendas1[tableView.tag].panelistName[indexPath.row]
+        cell.desLabel!.text = agendas1[tableView.tag].panelistDes[indexPath.row]
+        }
+        return cell
+    }
+    
+
 }

@@ -49,8 +49,8 @@ class MediaList: UIViewController, UICollectionViewDelegate, UICollectionViewDat
         var i = 0
         while(i <= 18)    {
             
-            var temp1 = json[i]["thumb"].stringValue
-            var temp2 = json[i]["url"].stringValue
+            let temp1 = json[i]["thumb"].stringValue
+            let temp2 = json[i]["url"].stringValue
             
             let obj = Media(mediaPhotoURL: temp1, thumb: temp2)
             

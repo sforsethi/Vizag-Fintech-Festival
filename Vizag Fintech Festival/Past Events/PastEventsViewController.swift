@@ -51,7 +51,7 @@ class PastEventsViewController: UIViewController, UICollectionViewDelegate, UICo
         var i = 0
         while (i < 3) {
             
-            var temp1 = json[i]["category"].stringValue
+            let temp1 = json[i]["category"].stringValue
             print(temp1)
             
             var temp2 = [String]()

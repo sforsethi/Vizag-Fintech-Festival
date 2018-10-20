@@ -12,6 +12,7 @@ class AgendaCell: UICollectionViewCell {
 
     
     
+    @IBOutlet weak var panelistTitle: UILabel!
     @IBOutlet weak var hostTitle: UILabel!
     @IBOutlet weak var keynoteView: UIView!
     @IBOutlet weak var keynoteTitle: UILabel!
@@ -46,12 +47,12 @@ class AgendaCell: UICollectionViewCell {
         keynoteName.isHidden = true
         keynoteTitle.isHidden = true
         keynoteView.isHidden = true
-        hostTitle.isHidden = true
         moderatorDes.isHidden = true
         moderatorName.isHidden = true
         moderatorView.isHidden = true
         moderatorTitle.isHidden = true
-        hostTitle.isHidden = true
+        tableView.isHidden = true
+        panelistTitle.isHidden = true
     }
     
     func showPerformer()  {
@@ -69,7 +70,6 @@ class AgendaCell: UICollectionViewCell {
     }
     func showHost() {
         hostName.isHidden = false
-        hostTitle.isHidden = false
     }
     
     func moderatorShow()    {
@@ -77,6 +77,19 @@ class AgendaCell: UICollectionViewCell {
         moderatorName.isHidden = false
         moderatorView.isHidden = false
         moderatorTitle.isHidden = false
+    }
+    func setTableViewDataSourceDelegate
+        <D: UITableViewDataSource & UITableViewDelegate>
+        (dataSourceDelegate: D, forRow row: Int) {
+        
+        tableView.delegate = dataSourceDelegate
+        tableView.dataSource = dataSourceDelegate
+        tableView.tag = row
+        tableView.reloadData()
+    }
+    func showPanelist() {
+        tableView.isHidden = false
+        panelistTitle.isHidden = false
     }
     
     
