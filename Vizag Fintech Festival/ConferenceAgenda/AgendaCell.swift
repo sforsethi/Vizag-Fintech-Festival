@@ -9,18 +9,26 @@
 import UIKit
 
 class AgendaCell: UICollectionViewCell {
+
+    
     
     @IBOutlet weak var hostTitle: UILabel!
     @IBOutlet weak var keynoteView: UIView!
     @IBOutlet weak var keynoteTitle: UILabel!
     @IBOutlet weak var keynoteName: UILabel!
-    @IBOutlet weak var hostLabel: UILabel!
     @IBOutlet weak var keynoteDes: UILabel!
     @IBOutlet weak var performerLabel: UILabel!
     
+    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var hostLabel: UILabel!
+    @IBOutlet weak var moderatorName: UILabel!
+    @IBOutlet weak var moderatorDes: UILabel!
+    @IBOutlet weak var moderatorView: UIView!
+    @IBOutlet weak var moderatorTitle: UILabel!
     @IBOutlet weak var performerTitle: UILabel!
     @IBOutlet weak var performerView: UIView!
     @IBOutlet weak var performerName: UILabel!
+    
     @IBOutlet weak var hostName: UILabel!
     @IBOutlet weak var timeLabel: UILabel!
     @IBOutlet weak var titleLabel: UILabel!
@@ -38,6 +46,11 @@ class AgendaCell: UICollectionViewCell {
         keynoteName.isHidden = true
         keynoteTitle.isHidden = true
         keynoteView.isHidden = true
+        hostTitle.isHidden = true
+        moderatorDes.isHidden = true
+        moderatorName.isHidden = true
+        moderatorView.isHidden = true
+        moderatorTitle.isHidden = true
         hostTitle.isHidden = true
     }
     
@@ -58,5 +71,13 @@ class AgendaCell: UICollectionViewCell {
         hostName.isHidden = false
         hostTitle.isHidden = false
     }
+    
+    func moderatorShow()    {
+        moderatorDes.isHidden = false
+        moderatorName.isHidden = false
+        moderatorView.isHidden = false
+        moderatorTitle.isHidden = false
+    }
+    
     
 }

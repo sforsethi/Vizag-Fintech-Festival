@@ -36,6 +36,7 @@
 		BC610BA921700FAB007AC403 /* BookYourSpaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC610BA821700FAB007AC403 /* BookYourSpaceViewController.swift */; };
 		BC610BAB217010B5007AC403 /* AttendTheConferenceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC610BAA217010B5007AC403 /* AttendTheConferenceViewController.swift */; };
 		BCCD4A15216E1A5A00EC330C /* FestivalLineup.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCD4A14216E1A5A00EC330C /* FestivalLineup.swift */; };
+		BCEA6487217A74A300E42084 /* ConferenceAgendaViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCEA6486217A74A300E42084 /* ConferenceAgendaViewController2.swift */; };
 		BCF20107216C6ADB00C9E49C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF20106216C6ADB00C9E49C /* AppDelegate.swift */; };
 		BCF20109216C6ADB00C9E49C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF20108216C6ADB00C9E49C /* ViewController.swift */; };
 		BCF2010C216C6ADB00C9E49C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCF2010A216C6ADB00C9E49C /* Main.storyboard */; };
@@ -77,6 +78,7 @@
 		BC610BA821700FAB007AC403 /* BookYourSpaceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookYourSpaceViewController.swift; sourceTree = "<group>"; };
 		BC610BAA217010B5007AC403 /* AttendTheConferenceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttendTheConferenceViewController.swift; sourceTree = "<group>"; };
 		BCCD4A14216E1A5A00EC330C /* FestivalLineup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FestivalLineup.swift; sourceTree = "<group>"; };
+		BCEA6486217A74A300E42084 /* ConferenceAgendaViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConferenceAgendaViewController2.swift; sourceTree = "<group>"; };
 		BCF20103216C6ADB00C9E49C /* Vizag Fintech Festival.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Vizag Fintech Festival.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCF20106216C6ADB00C9E49C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BCF20108216C6ADB00C9E49C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -159,6 +161,7 @@
 		BC13AA2421776E75003B0D9D /* ConferenceAgenda */ = {
 			isa = PBXGroup;
 			children = (
+				BCEA6486217A74A300E42084 /* ConferenceAgendaViewController2.swift */,
 				BC13AA2521776E95003B0D9D /* ConferenceAgendaViewController.swift */,
 				BC13AA2721776EB7003B0D9D /* AgendaDataModel.swift */,
 				BC25775E21786B7500F27C4A /* AgendaCell.swift */,
@@ -354,6 +357,7 @@
 				BC610BA921700FAB007AC403 /* BookYourSpaceViewController.swift in Sources */,
 				BCF20109216C6ADB00C9E49C /* ViewController.swift in Sources */,
 				BC13AA2621776E95003B0D9D /* ConferenceAgendaViewController.swift in Sources */,
+				BCEA6487217A74A300E42084 /* ConferenceAgendaViewController2.swift in Sources */,
 				BC13AA062175EA4A003B0D9D /* MediaList.swift in Sources */,
 				BC25775F21786B7500F27C4A /* AgendaCell.swift in Sources */,
 				BC13AA082175EB03003B0D9D /* MediaCell.swift in Sources */,
@@ -513,6 +517,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_ENABLE_BATCH_MODE = NO;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;

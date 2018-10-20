@@ -20,30 +20,35 @@ class Agenda : Codable  {
     var performerName : String!
     var keynoteName : String!
     var keynoteDes : String!
-//    var discription : String!
-//    var moderator : [String]!
-//    var panelists : [String]!
-//    var presenters : [String]!
+    var panelistName = [String]()
+    var panelistDes = [String]()
     var other1 : String!
     var other2 : String!
     var other3 : String!
     var other4 : String!
+    var moderatorName : String!
+    var moderatorDes : String!
     
-    init(status : String,agenda_date : String,title : String,subtitle : String,subtitlediscription : String,host : String,discription : String,performerName: String,keynoteName : String, keynoteDes : String, other1 : String,other2 : String, other3 : String,other4 : String) {
+    init(status : String,agenda_date : String,title : String,subtitle : String,subtitlediscription : String,host : String,discription : String,performerName: String,keynoteName : String, keynoteDes : String,moderatorName : String, moderatorDes : String,panelistName: [String],panelistDes : [String], other1 : String,other2 : String, other3 : String,other4 : String) {
         
         self.status = status
         self.agenda_date = agenda_date
         self.title = title
         self.subtitle = subtitle
         self.subtitlediscription = subtitlediscription
+        self.keynoteName = keynoteName
+        self.keynoteDes = keynoteDes
+        self.moderatorName = moderatorName
+        self.moderatorDes = moderatorDes
         self.discription = discription
         self.performerName = performerName
         self.other1 = other1
         self.other2 = other2
         self.other3 = other3
         self.other4 = other4
-        
-        
+        self.panelistName = panelistName
+        self.panelistDes = panelistDes
+      
     }
     
     
