@@ -18,6 +18,7 @@ class ConferenceAgendaViewController: UIViewController, UICollectionViewDelegate
     }
     @IBAction func day2Button(_ sender: Any) {
         getSpeakerData(url: URL_AGENDA_PART_2)
+        collectionView.reloadData()
     }
     
     var agendas1 : [Agenda] = []
@@ -30,6 +31,12 @@ class ConferenceAgendaViewController: UIViewController, UICollectionViewDelegate
         collectionView.delegate = self
         collectionView.dataSource = self
         getSpeakerData(url: URL_AGENDA_PART_1)
+        
+        if let flowLayout = UICollectionViewLayout.self as? UICollectionViewFlowLayout
+ {
+            let w = collectionView.frame.width - 20
+            flowLayout.estimatedItemSize = CGSize(width: w, height: 200)
+        }
 
     }
     
@@ -54,7 +61,7 @@ class ConferenceAgendaViewController: UIViewController, UICollectionViewDelegate
     func updateSpeakerData(json : JSON)  {
         
         var i = 0
-        while (i<21) {
+        while (i < json["agenda"].count) {
             
             let temp0 = json["agenda"][i]["status"].stringValue
             let temp1 = json["agenda"][i]["agenda_date"].stringValue

@@ -229,7 +229,13 @@ class ViewController: UIViewController {
         }
     }
     
+    @IBAction func helpDeskButton(_ sender: Any) {
+        if let url = URL(string: "https://www.vizagfintechfestival.com/contact-us.php") {
+            UIApplication.shared.open(url, options: [:])
+        }
 
+    }
+    
     @IBAction func ConferenceButton(_ sender: UIButton) {
     }
     override func viewDidLoad() {
